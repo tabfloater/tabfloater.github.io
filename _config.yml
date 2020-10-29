@@ -1,2 +1,6 @@
 exclude:
+  - CNAME
+  - Gemfile*
+  - LICENSE
+  - README.md
   - serve.sh
