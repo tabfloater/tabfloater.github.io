@@ -1,8 +1,8 @@
 download_url_prefix: myurl
 companion:
   linux:
-    version: refs/tags/v0.8.1
-    tag: refs/tags/v0.8.1_companion
+    version: v1234
+    tag: v1234_companion
     appimage: tabfloater-companion-0.8.0-x86_64.AppImage
   windows:
     version: winversion1
