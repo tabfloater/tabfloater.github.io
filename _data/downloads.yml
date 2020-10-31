@@ -1,4 +1,4 @@
-download_url_prefix: myurl
+download_url_prefix: https://github.com/tabfloater/tabfloater/releases/download
 companion:
   linux:
     version: v1234
