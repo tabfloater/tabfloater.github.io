@@ -54,4 +54,6 @@ function setPlatformSwitcher() {
     UIkit.switcher(window.platformSwitcher).show(platformId);
 }
 
-setPlatformSwitcher();
+window.onload = function() {
+    setPlatformSwitcher();
+}
