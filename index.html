@@ -268,10 +268,10 @@ layout: default
 
     <div class="uk-container">
         <div class="uk-section uk-section-small uk-padding-remove-top">
-            <ul class="uk-subnav uk-subnav-pill uk-flex uk-flex-center" data-uk-switcher="connect: .uk-switcher; animation: uk-animation-fade">
-                <li><a class="uk-border-pill" href="#"><span class="uk-icon uk-icon-image" style="background-image: url(assets/images/windows_black.svg);"></span> WINDOWS</a></li>
-                <li><a class="uk-border-pill" href="#"><span class="uk-icon uk-icon-image" style="background-image: url(assets/images/linux_outline.svg);"></span> LINUX</a></li>
-                <li><a class="uk-border-pill" href="#"><span class="uk-icon uk-icon-image" style="background-image: url(assets/images/apple.svg);"></span> MACOS</a></li>
+            <ul id="platformSwitcher" class="uk-subnav uk-subnav-pill uk-flex uk-flex-center" data-uk-switcher="connect: .uk-switcher; animation: uk-animation-fade">
+                <li><a class="uk-border-pill uk-text-middle" href="#"><span class="uk-icon uk-icon-image " style="background-image: url(assets/images/windows_black.svg);"></span> WINDOWS</a></li>
+                <li><a class="uk-border-pill uk-text-middle" href="#"><span class="uk-icon uk-icon-image" style="background-image: url(assets/images/linux_outline.svg);"></span> LINUX</a></li>
+                <li><a class="uk-border-pill uk-text-middle" href="#"><span class="uk-icon uk-icon-image" style="background-image: url(assets/images/apple.svg);"></span> MACOS</a></li>
             </ul>
         </div>
 
@@ -279,7 +279,7 @@ layout: default
             <li>
                 <div class="uk-grid uk-child-width-1-2@l" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
                     <div>
-                        <img class="uk-align-center img-logo" src="assets/images/windows.svg" data-uk-img alt="Image">
+                        <img class="uk-align-center img-logo" src="assets/images/windows.svg" data-uk-img alt="windows_logo">
                     </div>
                     <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
                         <h6 class="uk-text-primary uk-heading-line uk-text-right uk-margin-remove-top"><span class="uk-label uk-text-lowercase">{{ site.data.downloads.companion.windows.version }}</span></h6>
@@ -304,14 +304,14 @@ layout: default
                 </div>
             </li>
             <li>
-                <div class="uk-grid uk-child-width-1-2@l" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
+                <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
                     <div>
-                        <img class="uk-align-center img-logo" src="assets/images/linux-tux.svg" data-uk-img alt="Image">
+                        <img class="uk-align-center img-logo" src="assets/images/linux-tux.svg" data-uk-img alt="linux_logo">
                     </div>
                     <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
                         <h6 class="uk-text-primary uk-heading-line uk-text-right uk-margin-remove-top"><span class="uk-label uk-text-lowercase">{{ site.data.downloads.companion.linux.version }}</span></h6>
 
-                        <h5>Cross platform </h5>
+                        <h5 class="uk-text-primary">Cross-distribution</h5>
                         <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid>
 
                             <div>
@@ -321,22 +321,31 @@ layout: default
                             <div>
                                 <a class="uk-button uk-button-default uk-text-primary uk-align-right " href="{{ site.data.downloads.download_url_prefix }}/{{ site.data.downloads.companion.linux.tag }}/{{ site.data.downloads.companion.linux.appimage }}"><span uk-icon="icon: download"></span> Download</a>
                             </div>
-                            <div>
-                                Ubuntu <br />
-                                <h1><span class="uk-text-background">dslkfsdlfsdlk</span></h1>
-                                <!-- <small>{{ site.data.downloads.companion.linux.appimage }}</small> -->
-                            </div>
-                            <div>
-                                <pre><code>$ sudo apt-add bvlah
-$ sudo apt install blah</code></pre>
-                            </div>
                         </div>
+                        <h5 class="uk-text-primary">Ubuntu PPA</h5>
+                        <div id="ubuntuPpaCodeContainer" class="uk-position-relative uk-visible-toggle">
+                            <pre><code id="ubuntuPpaCode">$ sudo add-apt-repository ppa:ba32107/tabfloater
+$ sudo apt update
+$ sudo apt install tabfloater-companion</code></pre>
+                            <div class="uk-position-center-right uk-flex-middle">
+                                <div class="uk-padding-small uk-invisible-hover" id="copyUbuntuPpaCodeIcon" uk-icon="icon: copy"></div>
+
+                                <div hidden id="copyUbuntuPpaCodeSuccessIcon"
+                                    class="uk-animation-fade uk-amination-fast uk-alert-success uk-border-pill"
+                                    uk-icon="icon: check"></div>
+                            </div>
+                            <div uk-drop="pos: bottom-center; toggle: #dropTarget" id="copyUbuntuPpaCodeSuccessPopup" class="uk-width-auto">
+                                <div class="uk-card-small uk-card-default uk-padding-small">Copied!</div>
+                            </div>
+                            <div hidden id="dropTarget" class="uk-position-center-right uk-padding-small"></div>
+                        </div>
+                    </div>
                 </div>
             </li>
             <li>
                 <div class="uk-grid uk-child-width-1-2@l" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
                     <div>
-                        <img class="uk-align-center img-logo" src="assets/images/apple.svg" data-uk-img alt="Image">
+                        <img class="uk-align-center img-logo" src="assets/images/apple.svg" data-uk-img alt="apple_logo">
                     </div>
                     <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
                         <hr>

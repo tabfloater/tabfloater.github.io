@@ -1,3 +1,5 @@
+/* TODO clean up unused css rules */
+
 .nav {
     position: absolute;
     top: 15px;
@@ -53,8 +55,6 @@
 }
 
 .img-screenshot {
-    /* box-shadow: 0 25px 50px -12px rgba(0,0,0,.25); */
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     -webkit-box-shadow: 9px 10px 12px -3px rgba(0,0,0,0.53);
     -moz-box-shadow: 9px 10px 12px -3px rgba(0,0,0,0.53);
     box-shadow: 9px 10px 12px -3px rgba(0,0,0,0.53);
@@ -67,5 +67,16 @@
 pre {
     border: 0 solid #e5e5e5 !important;
     border-radius: 0 !important;
-    background: #f8f8f8 !important;
+    background: #f6f8fa !important;
+    padding: 20px !important;
+    margin: 0px !important;
+}
+
+#ubuntuPpaCodeContainer:hover {
+    cursor: pointer;
+}
+
+#copyUbuntuPpaCodeSuccessIcon {
+    padding: 7px !important;
+    margin-right: 8px;
 }
