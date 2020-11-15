@@ -13,19 +13,6 @@ function showCopySuccessIndicators(visible) {
     }
 }
 
-ubuntuPpaCodeContainer.onclick = async function() {
-    const textToCopy = window.ubuntuPpaCode.textContent.replaceAll("$ ", "") + "\n";
-
-    try {
-        await navigator.clipboard.writeText(textToCopy);
-        showCopySuccessIndicators(true);
-        await delay(1500);
-    } catch (error) {
-        console.error(`Unable to copy to clipboard. The error was: ${JSON.stringify(error)}`);
-    } finally {
-        showCopySuccessIndicators(false);
-    }
-}
 
 function getOS() {
     const platformOrAppVersion = navigator.platform || navigator.appVersion;
@@ -44,6 +31,7 @@ function getOS() {
 
 function setPlatformSwitcher() {
     let platformId = 0;
+    console.log("switching");
 
     switch (getOS()) {
         case "Windows": platformId = 0; break;
@@ -54,6 +42,23 @@ function setPlatformSwitcher() {
     UIkit.switcher(window.platformSwitcher).show(platformId);
 }
 
-window.onload = function() {
-    setPlatformSwitcher();
+async function codeAreaClickedAsync() {
+    const textToCopy = window.ubuntuPpaCode.textContent.replaceAll("$ ", "") + "\n";
+
+    try {
+        await navigator.clipboard.writeText(textToCopy);
+        showCopySuccessIndicators(true);
+        await delay(1500);
+    } catch (error) {
+        console.error(`Unable to copy to clipboard. The error was: ${JSON.stringify(error)}`);
+    } finally {
+        showCopySuccessIndicators(false);
+    }
 }
+
+
+if (window.ubuntuPpaCodeContainer) {
+    window.ubuntuPpaCodeContainer.onclick = codeAreaClickedAsync;
+}
+
+setPlatformSwitcher();

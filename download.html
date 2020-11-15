@@ -2,55 +2,123 @@
 layout: singleContentPage
 permalink: /download
 ---
-<div class="uk-cover-container uk-light uk-flex uk-flex-middle top-wrap-height">
-
-    <!-- TOP CONTAINER -->
-    <div class="uk-container uk-flex-auto top-container uk-position-relative uk-margin-medium-top">
-        <ul class="uk-subnav uk-subnav-pill" uk-switcher>
-            <li><a href="">Windows</a></li>
-            <li><a href="">Linux</a></li>
-            <li><a href="">macOS</a></li>
-        </ul>
-
-        <ul class="uk-switcher uk-margin">
-            <li>
-                <div class="uk-container">
-                    <p>
-                    Latest version: {{ site.data.downloads.companion.windows.version }}
-                    </p>
-                    <p>
-                    Installer: <a href="{{ site.data.downloads.download_url_prefix }}/{{ site.data.downloads.companion.windows.tag }}/{{ site.data.downloads.companion.windows.installer }}">{{ site.data.downloads.companion.windows.installer }}</a>
-                    <br/>
-                    Portable: <a href="{{ site.data.downloads.download_url_prefix }}/{{ site.data.downloads.companion.windows.tag }}/{{ site.data.downloads.companion.windows.portable }}">{{ site.data.downloads.companion.windows.portable }}</a>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="uk-container">
-                    <p>
-                    Latest version: {{ site.data.downloads.companion.linux.version }}
-                    </p>
-                    <p>
-                    AppImage: <a href="{{ site.data.downloads.download_url_prefix }}/{{ site.data.downloads.companion.linux.tag }}/{{ site.data.downloads.companion.linux.appimage }}">{{ site.data.downloads.companion.linux.appimage }}</a>
-                    <br/>
-                    Ubuntu install:
-                    <pre>
-                        <code>
-                            sudo add-apt-repository ppa:ba32107/tabfloater
-                            sudo apt update
-                            sudo apt install tabfloater-companion
-                        </code>
-                    </pre>
-                    </p>
-                </div>
-            </li>
-            <li>TabFloater Companion is not supported on MacOS at this time.</li>
-        </ul>
-
+<div class="uk-container uk-container-xsmall uk-text-center">
+    <h2 class="uk-margin-remove uk-h2">1. Add the extension</h2>
+</div>
+<div class="uk-container uk-section">
+    <div class="uk-grid uk-grid-large uk-child-width-1-2@m" data-uk-grid data-uk-scrollspy="target: > div; delay: 150; cls: uk-animation-slide-bottom-medium">
+        <div class="uk-text-center">
+            <h4 class="uk-margin-small-bottom uk-margin-top uk-margin-remove-adjacent">For Chrome / Chromium</h4>
+            <img src="assets/images/ChromeWebStore_Badge_v2_340x96.png" data-uk-img alt="Image">
+        </div>
+        <div class="uk-text-center">
+            <h4 class="uk-margin-small-bottom uk-margin-top uk-margin-remove-adjacent">For Firefox</h4>
+            <img src="assets/images/get-the-addon-178x60px.dad84b42.png" data-uk-img alt="Image">
+        </div>
     </div>
-    <!-- /TOP CONTAINER -->
-
 </div>
 
+<div class="uk-container uk-container-xsmall uk-text-center">
+    <h2 class="uk-margin-remove uk-h2">2. Install the companion</h2>
+</div>
 
+<div class="uk-container uk-section">
+    <div class="uk-section uk-section-small uk-padding-remove-top">
+        <ul id="platformSwitcher" class="uk-subnav uk-subnav-pill uk-flex uk-flex-center" data-uk-switcher="connect: .uk-switcher; animation: uk-animation-fade">
+            <li class="uk-text-middle"><a class="uk-border-pill uk-text-middle" href="#"><i class="fab fa-windows"></i> WINDOWS</a></li>
+            <li><a class="uk-border-pill uk-text-middle" href="#"><i class="fab fa-linux"></i> LINUX</a></li>
+            <li class="uk-text-middle"><a class="uk-border-pill uk-text-middle" href="#"><i class="fab fa-apple"></i> MACOS</a></li>
+        </ul>
+    </div>
 
+    <ul class="uk-switcher uk-margin">
+        <li>
+            <div class="uk-grid uk-child-width-1-2@l" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
+                <div>
+                    <img class="uk-align-center img-logo" src="assets/images/windows.svg" data-uk-img alt="windows_logo">
+                </div>
+                <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
+                    <h6 class="uk-text-primary uk-heading-line uk-text-right uk-margin-remove-top"><span class="uk-label uk-text-lowercase">{{ site.data.downloads.companion.windows.version }}</span></h6>
+
+                    <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid>
+                        <div>
+                            <i class="fas fa-hdd uk-margin-small-right"></i> MSI Installer <br />
+                            <small>{{ site.data.downloads.companion.windows.installer }}</small>
+                        </div>
+                        <div>
+                            <a class="uk-button uk-button-default uk-text-primary uk-align-right " href="{{ site.data.downloads.download_url_prefix }}/{{ site.data.downloads.companion.windows.tag }}/{{ site.data.downloads.companion.windows.installer }}" title="Download Windows installer"><span uk-icon="icon: download"></span> Download</a>
+                        </div>
+                    </div>
+                    <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid>
+                        <div>
+                            <i class="fas fa-cube uk-margin-small-right"></i> Portable ZIP Archive <br />
+                            <small>{{ site.data.downloads.companion.windows.portable }}</small>
+                        </div>
+                        <div>
+                            <a class="uk-button uk-button-default uk-text-primary uk-align-right " href="{{ site.data.downloads.download_url_prefix }}/{{ site.data.downloads.companion.windows.tag }}/{{ site.data.downloads.companion.windows.portable }}" title="Download Windows portable package"><span uk-icon="icon: download"></span> Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
+                <div>
+                    <img class="uk-align-center img-logo" src="assets/images/linux-tux.svg" data-uk-img alt="linux_logo">
+                </div>
+                <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
+                    <h6 class="uk-text-primary uk-heading-line uk-text-right uk-margin-remove-top"><span class="uk-label uk-text-lowercase">{{ site.data.downloads.companion.linux.version }}</span></h6>
+
+                    <h5 class="uk-text-primary">Cross-distribution</h5>
+                    <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid>
+                        <div>
+                            <i class="fas fa-cog uk-margin-small-right"></i> AppImage <br />
+                            <small>{{ site.data.downloads.companion.linux.appimage }}</small>
+                        </div>
+                        <div>
+                            <a class="uk-button uk-button-default uk-text-primary uk-align-right " href="{{ site.data.downloads.download_url_prefix }}/{{ site.data.downloads.companion.linux.tag }}/{{ site.data.downloads.companion.linux.appimage }}" title="Download AppImage"><span uk-icon="icon: download"></span> Download</a>
+                        </div>
+                    </div>
+                    <h5 class="uk-text-primary">Distribution-specific</h5>
+                    <div>
+                        <i class="fab fa-ubuntu uk-margin-small-right"></i> Ubuntu PPA <a href="https://launchpad.net/~ba32107/+archive/ubuntu/tabfloater" target="_blank" title="View package details on Launchpad" class="uk-margin-small-left" uk-icon="icon: link"></a>
+                    </div>
+                    <div id="ubuntuPpaCodeContainer" class="uk-position-relative uk-visible-toggle uk-margin-small-top">
+                        <pre><code id="ubuntuPpaCode">$ sudo add-apt-repository ppa:ba32107/tabfloater
+$ sudo apt update
+$ sudo apt install tabfloater-companion</code></pre>
+                        <div class="uk-position-center-right uk-flex-middle">
+                            <div class="uk-padding-small uk-invisible-hover" id="copyUbuntuPpaCodeIcon" uk-icon="icon: copy"></div>
+
+                            <div hidden id="copyUbuntuPpaCodeSuccessIcon"
+                                class="uk-animation-fade uk-amination-fast uk-alert-success uk-border-pill"
+                                uk-icon="icon: check"></div>
+                        </div>
+                        <div uk-drop="pos: bottom-center; toggle: #dropTarget" id="copyUbuntuPpaCodeSuccessPopup" class="uk-width-auto">
+                            <div class="uk-card-small uk-card-default uk-padding-small">Copied!</div>
+                        </div>
+                        <div hidden id="dropTarget" class="uk-position-center-right uk-padding-small"></div>
+                    </div>
+                    <h5 class="uk-text-primary">Register the companion</h5>
+                    <div>
+                        Linux companions must be registered explicitly. Click <a href="#" target="_blank" title="View docs about Linux companion registration">here</a> to learn how.
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="uk-grid uk-child-width-1-2@l" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
+                <div>
+                    <img class="uk-align-center img-logo" src="assets/images/apple.svg" data-uk-img alt="apple_logo">
+                </div>
+                <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
+                    <hr>
+                    <p>
+                        TabFloater Companion is currently not supported on macOS. <br />
+                        If this is something you'd be interested in, please comment/vote <a href="https://github.com/tabfloater/tabfloater/issues/189" target="_blank" title="View macOS GitHub issue">here</a>.
+                    </p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

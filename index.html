@@ -2,46 +2,21 @@
 layout: default
 ---
 <!-- TOP -->
-<div class="top-wrap uk-position-relative uk-light uk-background-secondary">
+<div class="uk-position-relative uk-light uk-background-secondary">
 
     {% include navbar.html %}
 
     <div class="uk-cover-container uk-light uk-flex uk-flex-middle top-wrap-height">
 
-        <!-- TOP CONTAINER -->
-        <!-- <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
-            <div>
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../assets/images/marketing-1.svg" alt="" data-uk-img>
-            </div>
-            <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
-                <h6 class="uk-text-primary">MAIN REASONS</h6>
-                <h2 class="uk-margin-small-top">Take decisions with real time data based on users interaction.</h2>
-                <p class="subtitle-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation.
-                </p>
-                <div class="uk-grid uk-child-width-1-2@s" data-uk-grid>
-                    <div>
-                        <h4>Great stuff</h4>
-                        <p>Ut enim ad minim veniam, quis nostrud magna aliqua exercitation. <a href="">Learn more.</a></p>
-                    </div>
-                    <div>
-                        <h4>Data analysis</h4>
-                        <p>Ut enim ad minim veniam, quis nostrud magna aliqua exercitation. <a href="">Learn more.</a></p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
         <div class="uk-container uk-container-large">
             <div class="uk-grid uk-child-width-1-2@l uk-flex-middle uk-flex-auto top-container uk-position-relative uk-margin-medium-top" data-uk-grid data-uk-parallax="y: 0,50; easing:0; opacity:0.2">
                 <div class="uk-width-1-2@s" data-uk-scrollspy="cls: uk-animation-slide-right-medium; target: > *; delay: 150">
-                    <h1 class="uk-margin-remove-top">Picture-in-Picture for any tab!</h1>
+                    <h1 class="uk-margin-remove-top">Picture-in-Picture for any tab</h1>
                     <p class="subtitle-text uk-visible@s">
-                        Not just for videos. Use any site as Picture-in-Picture.
+                        Browser the web in a floating window, always on top of your other tabs!
                     </p>
-                    <a href="download" title="Learn More" class="uk-button uk-button-primary uk-border-pill" data-uk-scrollspy-class="uk-animation-fade">TRY IT</a>
+                    <a href="#content" title="Learn more" class="uk-button uk-button-primary uk-border-pill" data-uk-scrollspy-class="uk-animation-fade" data-uk-scroll="duration: 500" data-uk-icon="arrow-down">LEARN MORE</a>
+                    <a href="download" title="Download" class="uk-button uk-button-primary uk-border-pill" data-uk-scrollspy-class="uk-animation-fade">DOWNLOAD</a>
                 </div>
                 <div>
                     <img class="img-screenshot" src="assets/images/screenshot2.png" alt="" uk-img>
@@ -53,9 +28,6 @@ layout: default
         <!-- TOP IMAGE -->
         <img src="assets/images/test1.jpg" alt="" data-uk-cover data-uk-img data-uk-parallax="opacity: 1,0.1; easing:0" />
 
-        <div class="uk-position-bottom-center uk-position-medium uk-position-z-index uk-text-center">
-            <a href="#content" data-uk-scroll="duration: 500" data-uk-icon="icon: arrow-down; ratio: 2"></a>
-        </div>
         <!-- <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="https://picsum.photos/640/700/?image=816 640w,
         https://picsum.photos/960/700/?image=816 960w,
         https://picsum.photos/1200/900/?image=816 1200w,
@@ -68,307 +40,75 @@ layout: default
 </div>
 
 <!-- /TOP -->
-<section id="content" class="uk-section uk-section-default">
+<section id="content" class="uk-section uk-section-default uk-section-large">
+
     <div class="uk-container">
-        <div class="uk-section uk-section-small uk-padding-remove-top">
-            <ul class="uk-subnav uk-subnav-pill uk-flex uk-flex-center" data-uk-switcher="connect: .uk-switcher; animation: uk-animation-fade">
-                <li><a class="uk-border-pill" href="#">Discover</a></li>
-                <li><a class="uk-border-pill" href="#">Benefits</a></li>
-                <li><a class="uk-border-pill" href="#">Features</a></li>
-            </ul>
+
+        <div class="uk-grid uk-grid-large uk-child-width-1-2@l uk-flex-middle" data-uk-grid>
+            <div data-uk-scrollspy="cls: uk-animation-slide-left-medium">
+                <img src="./assets/images/undraw_opened_tabs_re_s5ur.svg" alt="" data-uk-img>
+            </div>
+            <div data-uk-scrollspy="uk-animation-slide-right-medium">
+                <h6 class="uk-text-primary">WHAT IS IT</h6>
+                <h2 class="uk-margin-small-top">A simple way to multitask on the web</h2>
+                <p class="subtitle-text">
+                    There are several ways to watch your favorite videos while browsing the web - this is called Picture in Picture.
+                    Wouldn't it be great if you could do this with any site, not just videos? TabFloater allows you to do exactly that!
+                </p>
+                <div class="uk-grid uk-child-width-1-2@s" data-uk-grid>
+                    <div>
+                        <h4>Always on top</h4>
+                        <p>The floating tab always keeps on top, so you can interact with other sites. Write an email while reading </p>
+                    </div>
+                    <div>
+                        <h4>Smart positioning</h4>
+                        <p>TabFloater automatically positions the floating tab over empty areas, so you can see all the content.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <ul class="uk-switcher uk-margin">
-            <li>
-                <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
-                    <div>
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../assets/images/marketing-1.svg" alt="" data-uk-img>
-                    </div>
-                    <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
-                        <h6 class="uk-text-primary">MAIN REASONS</h6>
-                        <h2 class="uk-margin-small-top">Take decisions with real time data based on users interaction.</h2>
-                        <p class="subtitle-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation.
-                        </p>
-                        <div class="uk-grid uk-child-width-1-2@s" data-uk-grid>
-                            <div>
-                                <h4>Great stuff</h4>
-                                <p>Ut enim ad minim veniam, quis nostrud magna aliqua exercitation. <a href="">Learn more.</a></p>
-                            </div>
-                            <div>
-                                <h4>Data analysis</h4>
-                                <p>Ut enim ad minim veniam, quis nostrud magna aliqua exercitation. <a href="">Learn more.</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
-                    <div>
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../assets/images/marketing-8.svg" alt="" data-uk-img>
-                    </div>
-                    <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
-                        <h6 class="uk-text-primary">MAIN REASONS</h6>
-                        <h2 class="uk-margin-small-top">Take decisions with real time data based on users interaction.</h2>
-                        <p class="subtitle-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation.
-                        </p>
-                        <div class="uk-grid uk-child-width-1-2@s" data-uk-grid>
-                            <div>
-                                <h4>Great stuff</h4>
-                                <p>Ut enim ad minim veniam, quis nostrud magna aliqua exercitation. <a href="">Learn more.</a></p>
-                            </div>
-                            <div>
-                                <h4>Data analysis</h4>
-                                <p>Ut enim ad minim veniam, quis nostrud magna aliqua exercitation. <a href="">Learn more.</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
-                    <div>
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../assets/images/marketing-9.svg" alt="" data-uk-img>
-                    </div>
-                    <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
-                        <h6 class="uk-text-primary">MAIN REASONS</h6>
-                        <h2 class="uk-margin-small-top">Take decisions with real time data based on users interaction.</h2>
-                        <p class="subtitle-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation.
-                        </p>
-                        <div class="uk-grid uk-child-width-1-2@s" data-uk-grid>
-                            <div>
-                                <h4>Great stuff</h4>
-                                <p>Ut enim ad minim veniam, quis nostrud magna aliqua exercitation. <a href="">Learn more.</a></p>
-                            </div>
-                            <div>
-                                <h4>Data analysis</h4>
-                                <p>Ut enim ad minim veniam, quis nostrud magna aliqua exercitation. <a href="">Learn more.</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-
     </div>
 </section>
+
 <section class="uk-section uk-section-secondary uk-section-large">
     <div class="uk-container">
-        <div class="uk-grid uk-child-width-1-2@l uk-flex-middle">
-            <div>
-                <h6>SIMPLIFY THINGS</h6>
+        <div class="uk-grid uk-grid-large uk-child-width-1-2@l uk-flex-middle">
+            <div data-uk-scrollspy="cls: uk-animation-slide-left-medium">
+                <h6>HOW IT WORKS</h6>
                 <h2 class="uk-margin-small-top uk-h1">Manage all your data from one place only.</h2>
                 <p class="subtitle-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <a href="#" class="uk-button uk-button-primary uk-border-pill" data-uk-icon="arrow-right">LEARN MORE</a>
+                <a href="documentation" target="_blank" title="Read the documentation" class="uk-button uk-button-primary uk-border-pill" data-uk-icon="arrow-right">LEARN MORE</a>
             </div>
-            <div data-uk-scrollspy="cls: uk-animation-fade">
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../assets/images/marketing-2.svg" data-uk-img alt="Image">
+            <div data-uk-scrollspy="cls: uk-animation-slide-right-medium">
+                <img src="./assets/images/undraw_browsing_urt9.svg" data-uk-img alt="Image">
             </div>
         </div>
     </div>
 </section>
-<section class="uk-cover-container overlay-wrap">
-    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="https://picsum.photos/640/650/?image=770 640w,
-    https://picsum.photos/960/650/?image=770 960w,
-    https://picsum.photos/1200/650/?image=770 1200w,
-    https://picsum.photos/2000/650/?image=770 2000w"
-    data-sizes="100vw"
-    data-src="https://picsum.photos/1200/650/?image=770" alt="" data-uk-cover data-uk-img
-    >
-    <div class="uk-container uk-position-z-index uk-position-relative uk-section uk-section-xlarge uk-light">
-        <div class="uk-grid uk-flex-right">
 
-            <div class="uk-width-2-5@m" data-uk-parallax="y: 50,-50; easing: 0; media:@l">
-                <h6>TESTIMONIALS</h6>
-                <div class="uk-position-relative uk-visible-toggle uk-light" data-uk-slider="easing: cubic-bezier(.16,.75,.47,1)">
-                    <ul class="uk-slider-items uk-child-width-1-1">
-                        <li>
-                            <div data-uk-slider-parallax="opacity: 0.2,1,0.2">
-                                <h2 class="uk-margin-small-top">"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"</h2>
-                                <p class="uk-text-meta">Lorena Smith, founder of Some Cool Startup</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div data-uk-slider-parallax="opacity: 0.2,1,0.2">
-                                <h2 class="uk-margin-small-top">"Aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"</h2>
-                                <p class="uk-text-meta">Lorena Smith, founder of Some Cool Startup</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div data-uk-slider-parallax="opacity: 0.2,1,0.2">
-                                <h2 class="uk-margin-small-top">"Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"</h2>
-                                <p class="uk-text-meta">Lorena Smith, founder of Some Cool Startup</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="uk-slider-nav uk-dotnav uk-margin-top"><li></li></ul>
 
-                </div>
-            </div>
+<section class="uk-section uk-section-default">
 
+    <div class="uk-container uk-text-center">
+        <div class="uk-container uk-margin-large-bottom">
+            <h2>See it in action</h2>
+        </div>
+        <div class="img-screenshot" data-uk-scrollspy="cls: uk-animation-fade">
+            <video controls playsinline loop muted uk-video="autoplay: inview">
+                <source src="{{ site.url }}/assets/videos/picture-in-picture.mp4" type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
         </div>
     </div>
 </section>
 
-<!-- BOTTOM -->
-<section id="download" class="uk-section uk-section-default">
-
-    <div class="uk-container uk-container-xsmall uk-text-center uk-section">
-        <h2 class="uk-margin-remove uk-h2">1. Add the extension</h2>
+<section class="uk-section uk-section-default">
+    <div class="uk-container uk-text-center">
+        <a href="#" uk-totop uk-scroll></a>
     </div>
-    <div class="uk-container">
-        <div class="uk-grid uk-grid-large uk-child-width-1-2@m" data-uk-grid data-uk-scrollspy="target: > div; delay: 150; cls: uk-animation-slide-bottom-medium">
-            <div class="uk-text-center">
-                <h4 class="uk-margin-small-bottom uk-margin-top uk-margin-remove-adjacent">For Chrome / Chromium</h4>
-                <img src="assets/images/ChromeWebStore_Badge_v2_340x96.png" data-uk-img alt="Image">
-            </div>
-            <div class="uk-text-center">
-                <h4 class="uk-margin-small-bottom uk-margin-top uk-margin-remove-adjacent">For Firefox</h4>
-                <img src="assets/images/get-the-addon-178x60px.dad84b42.png" data-uk-img alt="Image">
-            </div>
-        </div>
-    </div>
-
-    <div class="uk-container uk-container-xsmall uk-text-center uk-section">
-        <h2 class="uk-margin-remove uk-h2">2. Install the companion</h2>
-    </div>
-
-    <!-- <div class="uk-container">
-        <div class="uk-grid uk-grid-large uk-child-width-1-2@m" data-uk-grid data-uk-scrollspy="target: > div; delay: 150; cls: uk-animation-slide-bottom-medium">
-            <div class="uk-text-center">
-                <img src="assets/images/microsoft-windows.svg" data-uk-img alt="Image">
-                <p>
-                    Latest version: {{ site.data.downloads.companion.windows.version }}
-                    </p>
-                    <p>
-                    <a class="uk-button uk-button-default" href="{{ site.data.downloads.download_url_prefix }}/{{ site.data.downloads.companion.windows.tag }}/{{ site.data.downloads.companion.windows.installer }}">Download installer</a>
-                    <br/>
-                    <a href="{{ site.data.downloads.download_url_prefix }}/{{ site.data.downloads.companion.windows.tag }}/{{ site.data.downloads.companion.windows.portable }}">Download portable package</a>
-                    </p>
-            </div>
-            <div class="uk-text-center">
-                <h4 class="uk-margin-small-bottom uk-margin-top uk-margin-remove-adjacent">FIREFOX</h4>
-                <img src="assets/images/linux-tux.svg" data-uk-img alt="Image">
-            </div>
-        </div>
-    </div> -->
-
-    <div class="uk-container">
-        <div class="uk-section uk-section-small uk-padding-remove-top">
-            <ul id="platformSwitcher" class="uk-subnav uk-subnav-pill uk-flex uk-flex-center" data-uk-switcher="connect: .uk-switcher; animation: uk-animation-fade">
-                <li class="uk-text-middle"><a class="uk-border-pill uk-text-middle" href="#"><i class="fab fa-windows"></i> WINDOWS</a></li>
-                <li><a class="uk-border-pill uk-text-middle" href="#"><i class="fab fa-linux"></i> LINUX</a></li>
-                <li class="uk-text-middle"><a class="uk-border-pill uk-text-middle" href="#"><i class="fab fa-apple"></i> MACOS</a></li>
-            </ul>
-        </div>
-
-        <ul class="uk-switcher uk-margin">
-            <li>
-                <div class="uk-grid uk-child-width-1-2@l" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
-                    <div>
-                        <img class="uk-align-center img-logo" src="assets/images/windows.svg" data-uk-img alt="windows_logo">
-                    </div>
-                    <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
-                        <h6 class="uk-text-primary uk-heading-line uk-text-right uk-margin-remove-top"><span class="uk-label uk-text-lowercase">{{ site.data.downloads.companion.windows.version }}</span></h6>
-
-                        <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid>
-                            <div>
-                                <i class="fas fa-hdd uk-margin-small-right"></i> MSI Installer <br />
-                                <small>{{ site.data.downloads.companion.windows.installer }}</small>
-                            </div>
-                            <div>
-                                <a class="uk-button uk-button-default uk-text-primary uk-align-right " href="{{ site.data.downloads.download_url_prefix }}/{{ site.data.downloads.companion.windows.tag }}/{{ site.data.downloads.companion.windows.installer }}"><span uk-icon="icon: download"></span> Download</a>
-                            </div>
-                        </div>
-                        <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid>
-                            <div>
-                                <i class="fas fa-cube uk-margin-small-right"></i> Portable ZIP Archive <br />
-                                <small>{{ site.data.downloads.companion.windows.portable }}</small>
-                            </div>
-                            <div>
-                                <a class="uk-button uk-button-default uk-text-primary uk-align-right " href="{{ site.data.downloads.download_url_prefix }}/{{ site.data.downloads.companion.windows.tag }}/{{ site.data.downloads.companion.windows.portable }}"><span uk-icon="icon: download"></span> Download</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
-                    <div>
-                        <img class="uk-align-center img-logo" src="assets/images/linux-tux.svg" data-uk-img alt="linux_logo">
-                    </div>
-                    <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
-                        <h6 class="uk-text-primary uk-heading-line uk-text-right uk-margin-remove-top"><span class="uk-label uk-text-lowercase">{{ site.data.downloads.companion.linux.version }}</span></h6>
-
-                        <h5 class="uk-text-primary">Cross-distribution</h5>
-                        <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid>
-                            <div>
-                                <i class="fas fa-cog uk-margin-small-right"></i> AppImage <br />
-                                <small>{{ site.data.downloads.companion.linux.appimage }}</small>
-                            </div>
-                            <div>
-                                <a class="uk-button uk-button-default uk-text-primary uk-align-right " href="{{ site.data.downloads.download_url_prefix }}/{{ site.data.downloads.companion.linux.tag }}/{{ site.data.downloads.companion.linux.appimage }}"><span uk-icon="icon: download"></span> Download</a>
-                            </div>
-                        </div>
-                        <h5 class="uk-text-primary">Distribution-specific</h5>
-                        <div>
-                            <i class="fab fa-ubuntu uk-margin-small-right"></i> Ubuntu PPA <a class="uk-margin-small-left" href="https://launchpad.net/~ba32107/+archive/ubuntu/tabfloater" target="_blank" uk-icon="icon: link"></a>
-                        </div>
-                        <div id="ubuntuPpaCodeContainer" class="uk-position-relative uk-visible-toggle uk-margin-small-top">
-                            <pre><code id="ubuntuPpaCode">$ sudo add-apt-repository ppa:ba32107/tabfloater
-$ sudo apt update
-$ sudo apt install tabfloater-companion</code></pre>
-                            <div class="uk-position-center-right uk-flex-middle">
-                                <div class="uk-padding-small uk-invisible-hover" id="copyUbuntuPpaCodeIcon" uk-icon="icon: copy"></div>
-
-                                <div hidden id="copyUbuntuPpaCodeSuccessIcon"
-                                    class="uk-animation-fade uk-amination-fast uk-alert-success uk-border-pill"
-                                    uk-icon="icon: check"></div>
-                            </div>
-                            <div uk-drop="pos: bottom-center; toggle: #dropTarget" id="copyUbuntuPpaCodeSuccessPopup" class="uk-width-auto">
-                                <div class="uk-card-small uk-card-default uk-padding-small">Copied!</div>
-                            </div>
-                            <div hidden id="dropTarget" class="uk-position-center-right uk-padding-small"></div>
-                        </div>
-                        <p>
-                            <small>
-                                Note: using TabFloater with Snap Chromium requires special considerations. Click <a href="#" target="_blank">here</a> to learn more.
-                            </small>
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="uk-grid uk-child-width-1-2@l" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
-                    <div>
-                        <img class="uk-align-center img-logo" src="assets/images/apple.svg" data-uk-img alt="apple_logo">
-                    </div>
-                    <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
-                        <hr>
-                        <p>
-                            TabFloater Companion is currently not supported on macOS. <br />
-                            If this is something you'd be interested in, please comment/vote <a href="https://github.com/tabfloater/tabfloater/issues/189" target="_blank">here</a>.
-                        </p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-
 </section>
-<!-- BOTTOM -->
 
 </html>
