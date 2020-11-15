@@ -23,3 +23,12 @@ meg egy sor
 Curabitur tincidunt egestas nulla vitae aliquet. Nam pellentesque pellentesque cursus. Duis ullamcorper volutpat ligula ut auctor. Curabitur ac aliquet eros. Mauris quis convallis risus. Sed auctor justo quis arcu iaculis elementum. Suspendisse lobortis nisi ligula, quis volutpat ex eleifend in. Sed pretium laoreet varius. In hac habitasse platea dictumst. Nam quis pretium risus, sit amet pulvinar metus. Vivamus pulvinar lectus at sapien vehicula, eget venenatis ipsum venenatis. Donec dignissim dapibus nibh sit amet mattis. Nam augue est, consectetur vel dolor ut, commodo aliquet risus. In lacinia nulla ut leo scelerisque, facilisis consequat mauris posuere. Pellentesque venenatis nibh a rhoncus ultrices.
 
 Es egy [link](a kedvemert) csak ugy
+
+
+why do i need to install an application?
+
+is this safe?
+
+do you collect any info?
+
+how to use it: show screenshots of badge with success or error
