@@ -3,31 +3,36 @@ layout: pageWithNavbar
 permalink: /download
 ---
 <div class="uk-container uk-container-xsmall uk-text-center">
-    <h2 class="uk-margin-remove uk-h2">1. Add the extension</h2>
+    <h2 class="uk-margin-remove">1. Add the extension</h2>
 </div>
+
 <div class="uk-container uk-section">
     <div class="uk-grid uk-grid-large uk-child-width-1-2@m" data-uk-grid data-uk-scrollspy="target: > div; delay: 150; cls: uk-animation-slide-bottom-medium">
         <div class="uk-text-center">
             <h4 class="uk-margin-small-bottom uk-margin-top uk-margin-remove-adjacent">For Chrome / Chromium</h4>
-            <img src="assets/images/ChromeWebStore_Badge_v2_340x96.png" data-uk-img alt="Image">
+            <a href="#" target="_blank" title="View in Chrome Webstore">
+                <img src="assets/images/addon_chrome.png" data-uk-img alt="add_to_chrome_badge">
+            </a>
         </div>
         <div class="uk-text-center">
             <h4 class="uk-margin-small-bottom uk-margin-top uk-margin-remove-adjacent">For Firefox</h4>
-            <img src="assets/images/get-the-addon-178x60px.dad84b42.png" data-uk-img alt="Image">
+            <a href="#" target="_blank" title="View in Firefox Add-ons">
+                <img src="assets/images/addon_firefox.png" data-uk-img alt="add_to_firefox_badge">
+            </a>
         </div>
     </div>
 </div>
 
 <div class="uk-container uk-container-xsmall uk-text-center">
-    <h2 class="uk-margin-remove uk-h2">2. Install the companion</h2>
+    <h2 class="uk-margin-remove">2. Install the companion</h2>
 </div>
 
 <div class="uk-container uk-section">
     <div class="uk-section uk-section-small uk-padding-remove-top">
         <ul id="platformSwitcher" class="uk-subnav uk-subnav-pill uk-flex uk-flex-center" data-uk-switcher="connect: .uk-switcher; animation: uk-animation-fade">
-            <li class="uk-text-middle"><a class="uk-border-pill uk-text-middle" href="#"><i class="fab fa-windows"></i> WINDOWS</a></li>
+            <li><a class="uk-border-pill uk-text-middle" href="#"><i class="fab fa-windows"></i> WINDOWS</a></li>
             <li><a class="uk-border-pill uk-text-middle" href="#"><i class="fab fa-linux"></i> LINUX</a></li>
-            <li class="uk-text-middle"><a class="uk-border-pill uk-text-middle" href="#"><i class="fab fa-apple"></i> MACOS</a></li>
+            <li><a class="uk-border-pill uk-text-middle" href="#"><i class="fab fa-apple"></i> MACOS</a></li>
         </ul>
     </div>
 
@@ -35,7 +40,7 @@ permalink: /download
         <li>
             <div class="uk-grid uk-child-width-1-2@l" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
                 <div>
-                    <img class="uk-align-center img-logo" src="assets/images/windows.svg" data-uk-img alt="windows_logo">
+                    <img class="uk-align-center img-logo" src="assets/images/logo_windows.svg" data-uk-img alt="windows_logo">
                 </div>
                 <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
                     <h6 class="uk-text-primary uk-heading-line uk-text-right uk-margin-remove-top"><span class="uk-label uk-text-lowercase">{{ site.data.downloads.companion.windows.version }}</span></h6>
@@ -64,7 +69,7 @@ permalink: /download
         <li>
             <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
                 <div>
-                    <img class="uk-align-center img-logo" src="assets/images/linux-tux.svg" data-uk-img alt="linux_logo">
+                    <img class="uk-align-center img-logo" src="assets/images/logo_linux.svg" data-uk-img alt="linux_logo">
                 </div>
                 <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
                     <h6 class="uk-text-primary uk-heading-line uk-text-right uk-margin-remove-top"><span class="uk-label uk-text-lowercase">{{ site.data.downloads.companion.linux.version }}</span></h6>
@@ -98,7 +103,7 @@ $ sudo apt install tabfloater-companion</code></pre>
         <li>
             <div class="uk-grid uk-child-width-1-2@l" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
                 <div>
-                    <img class="uk-align-center img-logo" src="assets/images/apple.svg" data-uk-img alt="apple_logo">
+                    <img class="uk-align-center img-logo" src="assets/images/logo_apple.svg" data-uk-img alt="apple_logo">
                 </div>
                 <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
                     <hr>

@@ -4,3 +4,5 @@ exclude:
   - LICENSE
   - README.md
   - serve.sh
+kramdown:
+    auto_ids: true

@@ -3,6 +3,6 @@ layout: pageWithNavbar
 permalink: /documentation
 ---
 <div class="uk-container">
-    {% capture my_include %}{% include faq.md %}{% endcapture %}
-    {{ my_include | markdownify }}
+    {% capture docs %}{% include documentation.md %}{% endcapture %}
+    {{ docs | markdownify }}
 </div>
