@@ -69,6 +69,8 @@
     width: 150px;
 }
 
+/* Code blocks */
+
 pre {
     border: 0 solid #e5e5e5 !important;
     border-radius: 0 !important;
@@ -77,15 +79,11 @@ pre {
     margin: 0px !important;
 }
 
-#ubuntuPpaCodeContainer:hover {
-    cursor: pointer;
-}
-
 .codeContainer:hover {
     cursor: pointer;
 }
 
-#copyUbuntuPpaCodeSuccessIcon {
+.copyCodeSuccessIcon {
     padding: 7px !important;
-    margin-right: 8px;
+    margin-right: 8px !important;
 }
