@@ -56,9 +56,65 @@ async function codeAreaClickedAsync() {
     }
 }
 
+function qq() {
+    const codeBlocks = document.getElementsByTagName('pre');
+
+    debugger;
+    for (const block of codeBlocks) {
+        const parentDiv = block.parentElement;
+        parentDiv.classList.add("codeContainer", "uk-visible-toggle", "uk-position-relative");
+
+        const iconsContainer = document.createElement("div");
+        iconsContainer.classList.add("uk-position-center-right", "uk-flex-middle");
+
+        const copyIcon = document.createElement("div");
+        copyIcon.classList.add("uk-padding-small", "uk-invisible-hover");
+        copyIcon.setAttribute("uk-icon", "icon: copy");
+
+        const copySuccessIcon = document.createElement("div");
+        copySuccessIcon.classList.add("uk-animation-fade", "uk-amination-fast", "uk-alert-success", "uk-border-pill");
+        copySuccessIcon.setAttribute("uk-icon", "icon: check");
+        copySuccessIcon.setAttribute("hidden", "");
+
+
+        iconsContainer.appendChild(copyIcon);
+        iconsContainer.appendChild(copySuccessIcon);
+
+
+// <div uk-drop="pos: bottom-center; toggle: #dropTarget" id="copyUbuntuPpaCodeSuccessPopup" class="uk-width-auto">
+//                             <div class="uk-card-small uk-card-default uk-padding-small">Copied!</div>
+//                         </div>
+//                         <div hidden id="dropTarget" class="uk-position-center-right uk-padding-small"></div>
+
+
+        const successPopupContainer = document.createElement("div");
+        successPopupContainer.classList.add("uk-width-auto");
+        successPopupContainer.setAttribute("uk-drop", "pos: bottom-center; toggle: #dropTarget");
+
+        const successPopup = document.createElement("div");
+        successPopup.classList.add("uk-card-small", "uk-card-default", "uk-padding-small");
+        successPopup.textContent = "Copied!";
+
+        successPopupContainer.appendChild(successPopup);
+
+        const dropTarget = document.createElement("div");
+        dropTarget.classList.add("uk-position-center-right", "uk-padding-small");
+        dropTarget.setAttribute("hidden", "");
+
+
+        parentDiv.appendChild(iconsContainer);
+        parentDiv.appendChild(successPopupContainer);
+        parentDiv.appendChild(dropTarget);
+        var q= 1;
+        q=2;
+
+    }
+
+}
 
 if (window.ubuntuPpaCodeContainer) {
     window.ubuntuPpaCodeContainer.onclick = codeAreaClickedAsync;
 }
 
 setPlatformSwitcher();
+qq();

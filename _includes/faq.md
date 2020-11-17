@@ -14,13 +14,15 @@ Aenean egestas orci in risus dictum, vitae cursus elit malesuada. Orci varius na
 
 This is a code example:
 ```
-na? milyen?
-meg egy sor
+$ na? milyen?
+$ meg egy sor
 ```
 
 ### Sed a lorem non mi consectetur cursus
 
 Curabitur tincidunt egestas nulla vitae aliquet. Nam pellentesque pellentesque cursus. Duis ullamcorper volutpat ligula ut auctor. Curabitur ac aliquet eros. Mauris quis convallis risus. Sed auctor justo quis arcu iaculis elementum. Suspendisse lobortis nisi ligula, quis volutpat ex eleifend in. Sed pretium laoreet varius. In hac habitasse platea dictumst. Nam quis pretium risus, sit amet pulvinar metus. Vivamus pulvinar lectus at sapien vehicula, eget venenatis ipsum venenatis. Donec dignissim dapibus nibh sit amet mattis. Nam augue est, consectetur vel dolor ut, commodo aliquet risus. In lacinia nulla ut leo scelerisque, facilisis consequat mauris posuere. Pellentesque venenatis nibh a rhoncus ultrices.
+
+![alt text](../assets/images/apple.svg)
 
 Es egy [link](a kedvemert) csak ugy
 
