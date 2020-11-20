@@ -14,56 +14,68 @@
  * limitations under the License.
  */
 
- .nav {
+.uk-sticky-placeholder {
+    height: 0 !important;
+}
+
+.nav {
     position: absolute;
-    top: 15px;
     z-index: 99;
     left: 0;
     right: 0;
 }
-.uk-sticky-placeholder {
-    height: 0 !important;
+
+.nav-placeholder {
+    height: 80px;
 }
-.top-wrap::before, .overlay-wrap::before {
-    position: absolute;
-    top:0;
-    right:0;
-    left: 0;
-    bottom: 0;
-    content: '';
-    z-index: 1;
-    background-color: rgba(0,0,0,0.5);
-}
-.top-wrap-height {
+
+.top-content-height {
     height: 80vh;
     min-height: 460px;
     transition: height 0.25s;
 }
+
 .uk-subnav-pill > * > :first-child {
     padding: 0.5rem 1rem;
-    /*background-color: rgba(0, 0, 0, 0.04);*/
+    background-color: rgba(0, 0, 0, 0.04);
 }
-.top-container {
-    z-index: 2;
-}
+
+
 .uk-logo img {
-    height: 38px;
+    height: 45px;
 }
+
 .subtitle-text {
     font-size: 1.2em;
     opacity: 0.7;
     font-weight: 300;
 }
-.logos-grid img {
-    display: block;
-    width: 60px;
-    margin: 0 auto;
-    filter:  grayscale(100%);
-    transition: filter 0.25s;
+
+.img-shadow {
+    -webkit-box-shadow: 9px 10px 12px -3px rgba(0,0,0,0.53);
+    -moz-box-shadow: 9px 10px 12px -3px rgba(0,0,0,0.53);
+    box-shadow: 9px 10px 12px -3px rgba(0,0,0,0.53);
 }
-.logos-grid img:hover {
-    display: block;
-    width: 60px;
-    margin: 0 auto;
-    filter:  grayscale(0);
+
+.img-logo {
+    width: 150px;
+}
+
+/* Code blocks */
+
+pre {
+    border: 0 solid #e5e5e5 !important;
+    border-radius: 0 !important;
+    background: #f6f8fa !important;
+    padding: 15px !important;
+    margin: 0px !important;
+}
+
+.codeContainer:hover {
+    cursor: pointer;
+}
+
+.copyCodeSuccessIcon {
+    padding: 7px !important;
+    margin-right: 8px !important;
 }
