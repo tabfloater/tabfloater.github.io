@@ -1,3 +1,8 @@
+---
+layout: pageWithNavbar
+permalink: /documentation
+---
+
 <!--
 Copyright 2020 Balazs Gyurak
 
@@ -12,10 +17,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
----
-layout: pageWithNavbar
-permalink: /documentation
----
 <div class="uk-container">
     {% capture docs %}{% include documentation.md %}{% endcapture %}
     {{ docs | markdownify }}

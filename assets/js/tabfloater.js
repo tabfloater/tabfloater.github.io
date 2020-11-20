@@ -70,6 +70,9 @@ async function codeContainerClickedAsync(codeBlock, copyIcon, copySuccessIcon, c
 }
 
 function addCopyElementsToPreBlocks() {
+    // The documentation page is generated from markdown, so we inject
+    // the copy functionality dynamically into those divs
+
     for (const preBlock of document.getElementsByTagName("pre")) {
         const codeContainer = preBlock.parentElement;
         codeContainer.classList.add("codeContainer", "uk-visible-toggle", "uk-position-relative");
@@ -83,7 +86,7 @@ function addCopyElementsToPreBlocks() {
 
         const copySuccessIcon = document.createElement("div");
         copySuccessIcon.classList.add("uk-animation-fade", "uk-amination-fast", "uk-alert-success",
-                                      "uk-border-pill", "copyCodeSuccessIcon");
+            "uk-border-pill", "copyCodeSuccessIcon");
         copySuccessIcon.setAttribute("uk-icon", "icon: check");
         copySuccessIcon.setAttribute("hidden", "");
 
@@ -109,7 +112,7 @@ function addCopyElementsToPreBlocks() {
         codeContainer.appendChild(copySuccessPopupContainer);
         codeContainer.appendChild(dropTarget);
 
-        codeContainer.onclick = async function() {
+        codeContainer.onclick = async function () {
             const codeBlock = preBlock.children[0];
             await codeContainerClickedAsync(codeBlock, copyIcon, copySuccessIcon, copySuccessPopupContainer);
         }
