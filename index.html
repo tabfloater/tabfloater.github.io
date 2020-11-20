@@ -4,41 +4,45 @@ layout: base
 <div class="uk-position-relative uk-light uk-background-secondary">
     {% include navbar.html %}
 
-    <div class="uk-cover-container uk-light uk-flex uk-flex-middle top-wrap-height">
-
-        <div class="top-wfrap uk-container uk-container-large">
-            <div class="uk-grid uk-child-width-1-2@l uk-flex-middle uk-flex-auto top-container uk-position-relative uk-margin-medium-top" data-uk-grid data-uk-parallax="y: 0,50; easing:0; opacity:0.2">
-                <div class="uk-width-1-2@s" data-uk-scrollspy="cls: uk-animation-slide-right-medium; target: > *; delay: 150">
+    <div class="uk-cover-container uk-light uk-flex uk-flex-middle top-content-height">
+        <div class="uk-container uk-container-large">
+            <div class="uk-grid uk-child-width-1-2@l uk-flex-middle uk-flex-auto top-container uk-position-relative uk-margin-medium-top"
+                data-uk-grid data-uk-parallax="y: 0,50; easing:0; opacity:0.2">
+                <div class="uk-width-1-2@s"
+                    data-uk-scrollspy="cls: uk-animation-slide-right-medium; target: > *; delay: 150">
                     <h1 class="uk-margin-remove-top">Picture-in-Picture for any tab</h1>
                     <p class="subtitle-text uk-visible@s">
                         Browser the web in a floating window, always visible!
                     </p>
-                    <a href="#content" title="Learn more" class="uk-button uk-button-primary uk-border-pill" data-uk-scrollspy-class="uk-animation-fade" data-uk-scroll="duration: 500" data-uk-icon="arrow-down">LEARN MORE</a>
+                    <a href="#main-content" class="uk-button uk-button-primary uk-border-pill"
+                        data-uk-scrollspy-class="uk-animation-fade" data-uk-scroll="duration: 500"
+                        data-uk-icon="arrow-down">LEARN MORE</a>
                 </div>
                 <div>
-                    <img class="img-screenshot" src="assets/images/screenshot.png" alt="" uk-img>
+                    <img class="img-shadow" src="/assets/images/screenshot.png" alt="screenshot" data-uk-img>
                 </div>
             </div>
         </div>
 
-        <img src="assets/images/background.jpg" alt="" data-uk-cover data-uk-img data-uk-parallax="opacity: 1,0.1; easing:0" />
+        <img src="/assets/images/background.jpg" alt="site_background" data-uk-cover data-uk-img
+            data-uk-parallax="opacity: 1,0.1; easing:0" />
     </div>
 </div>
 
-<section id="content" class="uk-section uk-section-default uk-section-large">
-
+<section id="main-content" class="uk-section uk-section-default uk-section-large">
     <div class="uk-container">
-
         <div class="uk-grid uk-grid-large uk-child-width-1-2@l uk-flex-middle" data-uk-grid>
             <div data-uk-scrollspy="cls: uk-animation-slide-left-medium">
-                <img src="./assets/images/undraw_opened_tabs_re_s5ur.svg" alt="" data-uk-img>
+                <img src="/assets/images/undraw_opened_tabs_re_s5ur.svg" alt="illustration" data-uk-img>
             </div>
             <div data-uk-scrollspy="uk-animation-slide-right-medium">
                 <h6 class="uk-text-primary">WHAT IS IT</h6>
                 <h2 class="uk-margin-small-top">A simple way to multitask on the web</h2>
                 <p class="subtitle-text">
-                    There are several ways to watch your favorite videos while browsing the web: this is called Picture in Picture.
-                    Wouldn't it be great if you could do this with any site, not just videos? TabFloater allows you to do exactly that
+                    There are several ways to watch your favorite videos while browsing the web: this is called Picture
+                    in Picture.
+                    Wouldn't it be great if you could do this with any site, not just videos? TabFloater allows you to
+                    do exactly that
                     - no more switching tabs back and forth!
                 </p>
                 <div class="uk-grid uk-child-width-1-2@s" data-uk-grid>
@@ -48,7 +52,8 @@ layout: base
                     </div>
                     <div>
                         <h4>Smart positioning</h4>
-                        <p>TabFloater automatically positions the floating tab over empty areas, so you can see all the content.</p>
+                        <p>TabFloater automatically positions the floating tab over empty areas, so you can see all the
+                            content.</p>
                     </div>
                 </div>
             </div>
@@ -64,17 +69,19 @@ layout: base
                 <h2 class="uk-margin-small-top">A small browser within your browser</h2>
                 <p class="subtitle-text">
                     TabFloater is a browser extension. The floating tabs are proper browser windows:
-                    you can navigate to other sites, scroll and zoom, read articles, write emails - anything you would normally do!
+                    you can navigate to other sites, scroll and zoom, read articles, write emails - anything you would
+                    normally do!
                 </p>
                 <p class="subtitle-text">
                     The extension requires a native application to be installed on your computer. It's
                     called TabFloater Companion, and it is responsible for keeping the floating tabs
                     always on top.
                 </p>
-                <a href="documentation" title="Read the documentation" class="uk-button uk-button-primary uk-border-pill" data-uk-icon="arrow-right">LEARN MORE</a>
+                <a href="documentation" class="uk-button uk-button-primary uk-border-pill"
+                    data-uk-icon="arrow-right">LEARN MORE</a>
             </div>
             <div data-uk-scrollspy="cls: uk-animation-slide-right-medium">
-                <img src="./assets/images/undraw_browsing_urt9.svg" data-uk-img alt="Image">
+                <img src="/assets/images/undraw_browsing_urt9.svg" alt="illustration" data-uk-img>
             </div>
         </div>
     </div>
@@ -82,14 +89,13 @@ layout: base
 
 
 <section class="uk-section uk-section-default">
-
     <div class="uk-container uk-text-center">
         <div class="uk-container uk-margin-large-bottom">
             <h1>See it in action</h1>
         </div>
         <div class="img-screenshot" data-uk-scrollspy="cls: uk-animation-fade">
             <video playsinline loop muted uk-video="autoplay: inview">
-                <source src="{{ site.url }}/assets/videos/picture-in-picture.mp4" type="video/mp4">
+                <source src="/assets/videos/picture-in-picture.mp4" type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
             </video>
         </div>
@@ -97,17 +103,16 @@ layout: base
 </section>
 
 <section class="uk-section uk-section-default">
-
     <div class="uk-container uk-text-center">
         <h2>Want to give it a try?</h2>
-        <a href="download" title="Download" class="uk-button uk-button-primary uk-border-pill" data-uk-scrollspy-class="uk-animation-fade">DOWNLOAD</a>
+        <a href="download" class="uk-button uk-button-primary uk-border-pill uk-margin-top"
+            data-uk-scrollspy-class="uk-animation-fade">DOWNLOAD</a>
     </div>
-
 </section>
 
 <section class="uk-section uk-section-default">
     <div class="uk-container uk-text-center">
-        <a href="#" uk-totop uk-scroll></a>
+        <a href="#" title="Back to top" uk-totop uk-scroll data-uk-tooltip="delay: 500"></a>
     </div>
 </section>
 
