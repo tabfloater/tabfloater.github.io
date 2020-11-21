@@ -1,7 +1,5 @@
 ---
-layout: markdownPage
-permalink: /documentation
-markdown_source: documentation.md
+layout: pageWithNavbar
 ---
 
 <!--
@@ -17,3 +15,8 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
+
+<div class="uk-container">
+    {% capture markdown_content %}{% include {{ page.markdown_source }} %}{% endcapture %}
+    {{ markdown_content | markdownify }}
+</div>
