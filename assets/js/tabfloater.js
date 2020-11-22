@@ -49,6 +49,7 @@ async function codeContainerClickedAsync(codeBlock, copyIcon, copySuccessIcon, c
     function showCopySuccessIndicators(visible) {
         copyIcon.hidden = visible;
         copySuccessIcon.hidden = !visible;
+        copySuccessPopup.hidden = !visible;
         if (visible) {
             UIkit.drop(copySuccessPopup).show();
         } else {
@@ -72,6 +73,7 @@ async function codeContainerClickedAsync(codeBlock, copyIcon, copySuccessIcon, c
 function addCopyElementsToPreBlocks() {
     // The documentation page is generated from markdown, so we inject
     // the copy functionality dynamically into those divs
+    let counter = 1;
 
     for (const preBlock of document.getElementsByTagName("pre")) {
         const codeContainer = preBlock.parentElement;
@@ -93,18 +95,20 @@ function addCopyElementsToPreBlocks() {
         iconsContainer.appendChild(copyIcon);
         iconsContainer.appendChild(copySuccessIcon);
 
+        const dropTargetId = `dropTarget_${counter++}`;
+
         const copySuccessPopupContainer = document.createElement("div");
         copySuccessPopupContainer.classList.add("uk-width-auto");
-        copySuccessPopupContainer.setAttribute("uk-drop", "pos: bottom-center; toggle: #dropTarget");
+        copySuccessPopupContainer.setAttribute("uk-drop", `pos: bottom-center; toggle: #${dropTargetId}`);
 
         const copySuccessPopup = document.createElement("div");
-        copySuccessPopup.classList.add("uk-card-small", "uk-card-default", "uk-padding-small");
+        copySuccessPopup.classList.add("uk-card-small", "uk-card-default");
         copySuccessPopup.textContent = "Copied!";
 
         copySuccessPopupContainer.appendChild(copySuccessPopup);
 
         const dropTarget = document.createElement("div");
-        dropTarget.id = "dropTarget";
+        dropTarget.id = dropTargetId;
         dropTarget.classList.add("uk-position-center-right", "uk-padding-small");
         dropTarget.setAttribute("hidden", "");
 

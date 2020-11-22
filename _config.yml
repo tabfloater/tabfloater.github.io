@@ -5,4 +5,4 @@ exclude:
   - README.md
   - serve.sh
 kramdown:
-    auto_ids: true
+  parse_block_html: true
