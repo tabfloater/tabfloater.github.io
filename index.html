@@ -1,266 +1,130 @@
 ---
-layout: default
+layout: base
 ---
-<!-- TOP -->
-<div class="top-wrap uk-position-relative uk-light uk-background-secondary">
 
+<!--
+Copyright 2020 Balazs Gyurak
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<div class="uk-position-relative uk-light uk-background-secondary">
     {% include navbar.html %}
 
-    <div class="uk-cover-container uk-light uk-flex uk-flex-middle top-wrap-height">
+    <div class="uk-cover-container uk-light uk-flex uk-flex-middle top-content-height">
 
-        <!-- TOP CONTAINER -->
-        <div class="uk-container uk-flex-auto top-container uk-position-relative uk-margin-medium-top" data-uk-parallax="y: 0,50; easing:0; opacity:0.2">
-            <div class="uk-width-1-2@s" data-uk-scrollspy="cls: uk-animation-slide-right-medium; target: > *; delay: 150">
-                <h6 class="uk-text-primary uk-margin-small-bottom">RESEARCH</h6>
-                <h1 class="uk-margin-remove-top">Innovation in your hands.</h1>
-                <p class="subtitle-text uk-visible@s">Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco </p>
-                <a href="#" title="Learn More" class="uk-button uk-button-primary uk-border-pill" data-uk-scrollspy-class="uk-animation-fade">LEARN MORE</a>
+        <div class="uk-container uk-flex-middle uk-flex-auto top-container uk-position-relative uk-margin-medium-top"
+            data-uk-parallax="y: 0,50; easing:0; opacity:0.2">
+            <div class="uk-width-1-2@s"
+                data-uk-scrollspy="cls: uk-animation-slide-right-medium; target: > *; delay: 150">
+                <h1 class="uk-margin-remove-top">Picture-in-Picture for any tab</h1>
+                <p class="subtitle-text uk-visible@s">
+                    Browser the web in a floating window, always visible!
+                </p>
+                <a href="#main-content" class="uk-button uk-button-primary uk-border-pill"
+                    data-uk-scrollspy-class="uk-animation-fade" data-uk-scroll="duration: 500"
+                    data-uk-icon="arrow-down">LEARN MORE</a>
             </div>
         </div>
-        <!-- /TOP CONTAINER -->
-        <!-- TOP IMAGE -->
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="https://picsum.photos/640/700/?image=816 640w,
-        https://picsum.photos/960/700/?image=816 960w,
-        https://picsum.photos/1200/900/?image=816 1200w,
-        https://picsum.photos/2000/1000/?image=816 2000w"
-        data-sizes="100vw"
-        data-src="https://picsum.photos/1200/900/?image=816" alt="" data-uk-cover data-uk-img data-uk-parallax="opacity: 1,0.1; easing:0"
-        >
-        <!-- /TOP IMAGE -->
+
+        <img src="/assets/images/background.jpg" alt="site_background" data-uk-cover data-uk-img
+            data-uk-parallax="opacity: 1,0.1; easing:0" />
     </div>
 </div>
 
-<!-- /TOP -->
-<section id="content" class="uk-section uk-section-default">
+<section id="main-content" class="uk-section uk-section-default uk-section-large">
     <div class="uk-container">
-        <div class="uk-section uk-section-small uk-padding-remove-top">
-            <ul class="uk-subnav uk-subnav-pill uk-flex uk-flex-center" data-uk-switcher="connect: .uk-switcher; animation: uk-animation-fade">
-                <li><a class="uk-border-pill" href="#">Discover</a></li>
-                <li><a class="uk-border-pill" href="#">Benefits</a></li>
-                <li><a class="uk-border-pill" href="#">Features</a></li>
-            </ul>
+        <div class="uk-grid uk-grid-large uk-child-width-1-2@l uk-flex-middle" data-uk-grid>
+            <div data-uk-scrollspy="cls: uk-animation-slide-left-medium">
+                <img src="/assets/images/undraw_opened_tabs_re_s5ur.svg" alt="illustration" data-uk-img>
+            </div>
+            <div data-uk-scrollspy="uk-animation-slide-right-medium">
+                <h6 class="uk-text-primary">WHAT IS IT</h6>
+                <h2 class="uk-margin-small-top">A simple way to multitask on the web</h2>
+                <p class="subtitle-text">
+                    There are several ways to watch your favorite videos while browsing the web: this is called Picture
+                    in Picture.
+                    Wouldn't it be great if you could do this with any site, not just videos? TabFloater allows you to
+                    do exactly that
+                    - no more switching tabs back and forth!
+                </p>
+                <div class="uk-grid uk-child-width-1-2@s" data-uk-grid>
+                    <div>
+                        <h4>Always on top</h4>
+                        <p>The floating tab always keeps on top, so you can interact with other sites.</p>
+                    </div>
+                    <div>
+                        <h4>Smart positioning</h4>
+                        <p>TabFloater automatically positions the floating tab over empty areas, so you can see all the
+                            content.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <ul class="uk-switcher uk-margin">
-            <li>
-                <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
-                    <div>
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../assets/images/marketing-1.svg" alt="" data-uk-img>
-                    </div>
-                    <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
-                        <h6 class="uk-text-primary">MAIN REASONS</h6>
-                        <h2 class="uk-margin-small-top">Take decisions with real time data based on users interaction.</h2>
-                        <p class="subtitle-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation.
-                        </p>
-                        <div class="uk-grid uk-child-width-1-2@s" data-uk-grid>
-                            <div>
-                                <h4>Great stuff</h4>
-                                <p>Ut enim ad minim veniam, quis nostrud magna aliqua exercitation. <a href="">Learn more.</a></p>
-                            </div>
-                            <div>
-                                <h4>Data analysis</h4>
-                                <p>Ut enim ad minim veniam, quis nostrud magna aliqua exercitation. <a href="">Learn more.</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
-                    <div>
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../assets/images/marketing-8.svg" alt="" data-uk-img>
-                    </div>
-                    <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
-                        <h6 class="uk-text-primary">MAIN REASONS</h6>
-                        <h2 class="uk-margin-small-top">Take decisions with real time data based on users interaction.</h2>
-                        <p class="subtitle-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation.
-                        </p>
-                        <div class="uk-grid uk-child-width-1-2@s" data-uk-grid>
-                            <div>
-                                <h4>Great stuff</h4>
-                                <p>Ut enim ad minim veniam, quis nostrud magna aliqua exercitation. <a href="">Learn more.</a></p>
-                            </div>
-                            <div>
-                                <h4>Data analysis</h4>
-                                <p>Ut enim ad minim veniam, quis nostrud magna aliqua exercitation. <a href="">Learn more.</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="uk-grid uk-child-width-1-2@l uk-flex-middle" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-slide-left-medium">
-                    <div>
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../assets/images/marketing-9.svg" alt="" data-uk-img>
-                    </div>
-                    <div data-uk-scrollspy-class="uk-animation-slide-right-medium">
-                        <h6 class="uk-text-primary">MAIN REASONS</h6>
-                        <h2 class="uk-margin-small-top">Take decisions with real time data based on users interaction.</h2>
-                        <p class="subtitle-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation.
-                        </p>
-                        <div class="uk-grid uk-child-width-1-2@s" data-uk-grid>
-                            <div>
-                                <h4>Great stuff</h4>
-                                <p>Ut enim ad minim veniam, quis nostrud magna aliqua exercitation. <a href="">Learn more.</a></p>
-                            </div>
-                            <div>
-                                <h4>Data analysis</h4>
-                                <p>Ut enim ad minim veniam, quis nostrud magna aliqua exercitation. <a href="">Learn more.</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-
     </div>
 </section>
+
 <section class="uk-section uk-section-secondary uk-section-large">
     <div class="uk-container">
-        <div class="uk-grid uk-child-width-1-2@l uk-flex-middle">
-            <div>
-                <h6>SIMPLIFY THINGS</h6>
-                <h2 class="uk-margin-small-top uk-h1">Manage all your data from one place only.</h2>
+        <div class="uk-grid uk-grid-large uk-child-width-1-2@l uk-flex-middle">
+            <div data-uk-scrollspy="cls: uk-animation-slide-left-medium">
+                <h6>HOW IT WORKS</h6>
+                <h2 class="uk-margin-small-top">A small browser within your browser</h2>
                 <p class="subtitle-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.
+                    TabFloater is a browser extension. The floating tabs are proper browser windows:
+                    you can navigate to other sites, scroll and zoom, read articles, write emails - anything you would
+                    normally do!
                 </p>
-                <a href="#" class="uk-button uk-button-primary uk-border-pill" data-uk-icon="arrow-right">LEARN MORE</a>
+                <p class="subtitle-text">
+                    The extension requires a native application to be installed on your computer. It's
+                    called TabFloater Companion, and it is responsible for keeping the floating tabs
+                    always on top.
+                </p>
+                <a href="documentation" class="uk-button uk-button-primary uk-border-pill"
+                    data-uk-icon="arrow-right">LEARN MORE</a>
             </div>
-            <div data-uk-scrollspy="cls: uk-animation-fade">
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../assets/images/marketing-2.svg" data-uk-img alt="Image">
+            <div data-uk-scrollspy="cls: uk-animation-slide-right-medium">
+                <img src="/assets/images/undraw_browsing_urt9.svg" alt="illustration" data-uk-img>
             </div>
         </div>
     </div>
 </section>
-<section class="uk-cover-container overlay-wrap">
-    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="https://picsum.photos/640/650/?image=770 640w,
-    https://picsum.photos/960/650/?image=770 960w,
-    https://picsum.photos/1200/650/?image=770 1200w,
-    https://picsum.photos/2000/650/?image=770 2000w"
-    data-sizes="100vw"
-    data-src="https://picsum.photos/1200/650/?image=770" alt="" data-uk-cover data-uk-img
-    >
-    <div class="uk-container uk-position-z-index uk-position-relative uk-section uk-section-xlarge uk-light">
-        <div class="uk-grid uk-flex-right">
 
-            <div class="uk-width-2-5@m" data-uk-parallax="y: 50,-50; easing: 0; media:@l">
-                <h6>TESTIMONIALS</h6>
-                <div class="uk-position-relative uk-visible-toggle uk-light" data-uk-slider="easing: cubic-bezier(.16,.75,.47,1)">
-                    <ul class="uk-slider-items uk-child-width-1-1">
-                        <li>
-                            <div data-uk-slider-parallax="opacity: 0.2,1,0.2">
-                                <h2 class="uk-margin-small-top">"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"</h2>
-                                <p class="uk-text-meta">Lorena Smith, founder of Some Cool Startup</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div data-uk-slider-parallax="opacity: 0.2,1,0.2">
-                                <h2 class="uk-margin-small-top">"Aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"</h2>
-                                <p class="uk-text-meta">Lorena Smith, founder of Some Cool Startup</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div data-uk-slider-parallax="opacity: 0.2,1,0.2">
-                                <h2 class="uk-margin-small-top">"Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"</h2>
-                                <p class="uk-text-meta">Lorena Smith, founder of Some Cool Startup</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="uk-slider-nav uk-dotnav uk-margin-top"><li></li></ul>
 
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-<!-- BOTTOM -->
 <section class="uk-section uk-section-default">
-
-    <div class="uk-container uk-container-xsmall uk-text-center uk-section uk-padding-remove-top">
-        <h5 class="uk-text-primary">ANALYTICS</h5>
-        <h2 class="uk-margin-remove uk-h1">Know the behavior of your potential customers.</h2>
-    </div>
-    <div class="uk-container">
-        <div class="uk-grid uk-grid-large uk-child-width-1-3@m" data-uk-grid data-uk-scrollspy="target: > div; delay: 150; cls: uk-animation-slide-bottom-medium">
-            <div class="uk-text-center">
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../assets/images/marketing-3.svg" data-uk-img alt="Image">
-                <h4 class="uk-margin-small-bottom uk-margin-top uk-margin-remove-adjacent">Lorem ipsum dolor sit amet</h4>
-                <p>24/7 support. We’re always here for you no matter what time of day.</p>
-            </div>
-            <div class="uk-text-center">
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../assets/images/marketing-4.svg" data-uk-img alt="Image">
-                <h4 class="uk-margin-small-bottom uk-margin-top uk-margin-remove-adjacent">Lorem ipsum dolor sit amet</h4>
-                <p>24/7 support. We’re always here for you no matter what time of day.</p>
-            </div>
-            <div class="uk-text-center">
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../assets/images/marketing-5.svg" data-uk-img alt="Image">
-                <h4 class="uk-margin-small-bottom uk-margin-top uk-margin-remove-adjacent">Lorem ipsum dolor sit amet</h4>
-                <p>24/7 support. We’re always here for you no matter what time of day.</p>
-            </div>
-            <div class="uk-text-center">
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../assets/images/marketing-5.svg" data-uk-img alt="Image">
-                <h4 class="uk-margin-small-bottom uk-margin-top uk-margin-remove-adjacent">Lorem ipsum dolor sit amet</h4>
-                <p>24/7 support. We’re always here for you no matter what time of day.</p>
-            </div>
-            <div class="uk-text-center">
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../assets/images/marketing-4.svg" data-uk-img alt="Image">
-                <h4 class="uk-margin-small-bottom uk-margin-top uk-margin-remove-adjacent">Lorem ipsum dolor sit amet</h4>
-                <p>24/7 support. We’re always here for you no matter what time of day.</p>
-            </div>
-            <div class="uk-text-center">
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../assets/images/marketing-3.svg" data-uk-img alt="Image">
-                <h4 class="uk-margin-small-bottom uk-margin-top uk-margin-remove-adjacent">Lorem ipsum dolor sit amet</h4>
-                <p>24/7 support. We’re always here for you no matter what time of day.</p>
-            </div>
-
+    <div class="uk-container uk-text-center">
+        <div class="uk-container uk-margin-large-bottom">
+            <h1>See it in action</h1>
+        </div>
+        <div class="img-screenshot" data-uk-scrollspy="cls: uk-animation-fade">
+            <video playsinline loop muted uk-video="autoplay: inview">
+                <source src="/assets/videos/picture-in-picture.mp4" type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
         </div>
     </div>
 </section>
-<!-- BOTTOM -->
-<!-- LOGOS -->
-<div class="uk-section uk-section-small uk-section-muted">
-    <div class="uk-container uk-container-small">
-        <div class="uk-grid uk-child-width-1-4 uk-child-width-expand@m logos-grid" data-uk-grid data-uk-scrollspy="cls: uk-animation-scale-down; target: > div > img; delay: 100">
-            <div>
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../assets/images/logo-1.svg" data-uk-img alt="Image">
-            </div>
-            <div>
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../assets/images/logo-2.svg" data-uk-img alt="Image">
-            </div>
-            <div>
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../assets/images/logo-3.svg" data-uk-img alt="Image">
-            </div>
-            <div>
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../assets/images/logo-6.svg" data-uk-img alt="Image">
-            </div>
-            <div>
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../assets/images/logo-7.svg" data-uk-img alt="Image">
-            </div>
-            <div>
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../assets/images/logo-8.svg" data-uk-img alt="Image">
-            </div>
-            <div>
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../assets/images/logo-4.svg" data-uk-img alt="Image">
-            </div>
-            <div>
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="../assets/images/logo-5.svg" data-uk-img alt="Image">
-            </div>
-        </div>
+
+<section class="uk-section uk-section-default">
+    <div class="uk-container uk-text-center">
+        <h2>Want to give it a try?</h2>
+        <a href="download" class="uk-button uk-button-primary uk-border-pill uk-margin-top"
+            data-uk-scrollspy-class="uk-animation-fade">DOWNLOAD</a>
     </div>
-</div>
-<!-- /LOGOS -->
+</section>
+
+<section class="uk-section uk-section-default">
+    <div class="uk-container uk-text-center">
+        <a href="#" title="Back to top" uk-totop uk-scroll data-uk-tooltip="delay: 500"></a>
+    </div>
+</section>
 
 </html>
