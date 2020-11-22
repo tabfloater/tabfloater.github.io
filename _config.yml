@@ -4,5 +4,3 @@ exclude:
   - LICENSE
   - README.md
   - serve.sh
-kramdown:
-  parse_block_html: true
