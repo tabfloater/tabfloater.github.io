@@ -73,7 +73,7 @@ async function codeContainerClickedAsync(codeBlock, copyIcon, copySuccessIcon, c
 function addCopyElementsToPreBlocks() {
     // The documentation page is generated from markdown, so we inject
     // the copy functionality dynamically into those divs
-    
+
     let counter = 1;
 
     for (const preBlock of document.getElementsByTagName("pre")) {
