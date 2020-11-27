@@ -86,3 +86,9 @@ pre {
     padding: 7px !important;
     margin-right: 8px !important;
 }
+
+/* Cookier banner */
+
+#cBanner {
+    z-index: 100;
+}
