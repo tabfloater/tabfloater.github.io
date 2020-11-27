@@ -85,7 +85,7 @@ Yes. Both the browser extension and the companion are [open source](https://gith
 
 Yes, but only anonymous usage information, which can be disabled. For more details, refer to our [privacy policy](privacy).
 
-#### It doesn't work!
+#### Troubleshooting
 
 The floating window doesn't stay on top? If the extension detects an error, it will display a red `!` next to the icon. You can get more information by hovering over it and/or going to the Options page to learn more about the problem.
 
