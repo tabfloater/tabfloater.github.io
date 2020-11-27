@@ -13,6 +13,7 @@ Refer to [CONTRIBUTING.md](https://github.com/tabfloater/tabfloater/blob/master/
 
 ## Credits:
  * Framework: [UIKit](https://getuikit.com/)
+ * Libraries used: [Font Awesome](https://fontawesome.com/), [js-cookie](https://github.com/js-cookie/js-cookie)
  * Site template: [KickOff](https://github.com/zzseba78/Kick-Off)
  * Background: photo by [Jeremy Lwanga](https://unsplash.com/photos/N02LYac2gOo) on [Unsplash](https://unsplash.com/)
  * Illustrations: [unDraw](https://undraw.co/illustrations)
