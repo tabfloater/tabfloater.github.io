@@ -15,14 +15,9 @@
  */
 
 .nav {
-    position: absolute;
     z-index: 99;
     left: 0;
     right: 0;
-}
-
-.nav-placeholder {
-    height: 80px;
 }
 
 .uk-sticky-placeholder {
