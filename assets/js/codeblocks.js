@@ -18,33 +18,6 @@ function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-function getOS() {
-    const platformOrAppVersion = navigator.platform || navigator.appVersion;
-    const osInfo = platformOrAppVersion.toString().toLowerCase();
-
-    if (osInfo.indexOf("win") != -1) {
-        return "Windows";
-    }
-    if (osInfo.indexOf("linux") != -1 || osInfo.indexOf("x11") != -1) {
-        return "Linux";
-    }
-    if (osInfo.indexOf("mac") != -1) {
-        return "macOS";
-    }
-}
-
-function setPlatformSwitcher() {
-    let platformId = 0;
-
-    switch (getOS()) {
-        case "Windows": platformId = 0; break;
-        case "Linux": platformId = 1; break;
-        case "macOS": platformId = 2; break;
-    }
-
-    UIkit.switcher(window.platformSwitcher).show(platformId);
-}
-
 async function codeContainerClickedAsync(codeBlock, copyIcon, copySuccessIcon, copySuccessPopup) {
     function showCopySuccessIndicators(visible) {
         copyIcon.hidden = visible;
@@ -122,10 +95,6 @@ function addCopyElementsToPreBlocks() {
             await codeContainerClickedAsync(codeBlock, copyIcon, copySuccessIcon, copySuccessPopupContainer);
         }
     }
-}
-
-if (window.platformSwitcher) {
-    setPlatformSwitcher();
 }
 
 addCopyElementsToPreBlocks();

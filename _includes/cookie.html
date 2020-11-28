@@ -1,0 +1,48 @@
+<!--
+Copyright 2020 Balazs Gyurak
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<div id="cBanner"
+    class="uk-card uk-card-small uk-card-primary uk-card-body uk-position-bottom-right uk-position-medium uk-position-fixed"
+    hidden>
+    <div class="uk-container">
+        <div>
+            <h3 class="uk-card-title">This site uses cookies</h3>
+            <p>
+                We use cookies to anonymously record site usage data. <br>
+                Learn more in our <a href="privacy">privacy policy</a>.
+            </p>
+        </div>
+        <div class="uk-text-right">
+            <button id="manageCookiePrefencesBannerButton"
+                class="uk-button uk-button-link uk-border-pill uk-margin-right">Manage preferences</button>
+            <button id="acceptCookiesButton" class="uk-button uk-button-primary uk-border-pill">Accept</button>
+        </div>
+    </div>
+</div>
+
+<div id="cookiePreferencesDialog" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        <h2 class="uk-modal-title">Cookie preferences</h2>
+        <p>
+            This website uses cookies to anonymously record site analytics data. This helps us learn how users interact
+            with our website. Learn more in our <a href="privacy">privacy policy</a>.
+        </p>
+        <label>Allow anonymous analytics cookies <input id="allowCookiesCheckbox" class="uk-checkbox uk-margin-left"
+                type="checkbox" checked></label>
+        <p class="uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            <button id="saveCookiePreferencesButton" class="uk-button uk-button-primary" type="button">Save</button>
+        </p>
+    </div>
+</div>
