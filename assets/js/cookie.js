@@ -14,7 +14,8 @@
  * limitations under the License.
  */
 
-import Cookies from '/assets/js/lib/js.cookie.min.mjs'
+import configureAnalytics from "/assets/js/analytics.js"
+import Cookies from "/assets/js/lib/js.cookie.min.mjs"
 
 const CookieName = "CookiesAllowed";
 const TenYearsInDays = 3650;
@@ -48,20 +49,29 @@ function manageCookiePreferences() {
     UIkit.modal(window.cookiePreferencesDialog).show();
 }
 
+function applyCookiePreferences(allowed) {
+    saveCookiePreference(allowed);
+    hideCookieBanner();
+
+    if (allowed) {
+        configureAnalytics();
+    }
+}
+
 window.manageCookiePrefencesBannerButton.onclick = manageCookiePreferences;
 window.manageCookiePrefencesFooterButton.onclick = manageCookiePreferences;
 
 window.saveCookiePreferencesButton.onclick = function () {
-    saveCookiePreference(window.allowCookiesCheckbox.checked);
-    hideCookieBanner();
+    applyCookiePreferences(window.allowCookiesCheckbox.checked);
     UIkit.modal(window.cookiePreferencesDialog).hide();
 }
 
 window.acceptCookiesButton.onclick = function () {
-    saveCookiePreference(true);
-    hideCookieBanner();
+    applyCookiePreferences(true);
 }
 
-if (!areCookiesAllowed()) {
+if (areCookiesAllowed()) {
+    configureAnalytics();
+} else {
     showCookieBanner();
 }
