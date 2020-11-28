@@ -12,18 +12,22 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
-<div class="nav"
-    data-uk-sticky="cls-active: uk-background-secondary uk-box-shadow-medium; top: 50vh; animation: uk-animation-slide-top">
+
+{% if page.url == "/" %}
+<div class="nav uk-position-absolute" data-uk-sticky="cls-active: uk-background-secondary uk-box-shadow-medium; top: 50vh; animation: uk-animation-slide-top">
+{% else %}
+<div class="nav" data-uk-sticky="cls-active: uk-background-secondary uk-box-shadow-medium; top: 50vh; animation: uk-animation-slide-top">
+{% endif %}
     <div class="uk-container">
-        <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+        <nav class="uk-navbar uk-navbar-container uk-navbar-transparent uk-grid" data-uk-navbar>
             <div class="uk-navbar-left">
                 <div class="uk-navbar-item uk-padding-remove-horizontal">
                     <a class="uk-logo" href="/"><img src="/assets/images/logo_tabfloater.svg" alt="logo"></a>
                 </div>
             </div>
             <div class="uk-navbar-right">
-                <ul class="uk-navbar-nav uk-visible@s">
-                    <li class="uk-active uk-visible@m"><a href="/" title="Go back home" data-uk-icon="home"
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="/" title="Go back home" data-uk-icon="home"
                             data-uk-tooltip="delay: 500"></a></li>
                     <li><a href="download">Download</a></li>
                     <li><a href="documentation">Documentation</a></li>
