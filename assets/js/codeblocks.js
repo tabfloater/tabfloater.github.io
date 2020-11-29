@@ -97,4 +97,6 @@ function addCopyElementsToPreBlocks() {
     }
 }
 
-addCopyElementsToPreBlocks();
+window.addEventListener('DOMContentLoaded', _ => {
+    addCopyElementsToPreBlocks();
+});

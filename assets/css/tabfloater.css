@@ -96,3 +96,10 @@ pre {
 #cBanner {
     z-index: 100;
 }
+
+/* Header offsets for documentation links */
+
+.header-offset {
+    padding-top: 80px;
+    margin-top: -80px;
+}

@@ -66,6 +66,9 @@ limitations under the License.
     {% if page.url == "/download" or page.url == "/documentation" %}
     <script src="/assets/js/codeblocks.js"></script>
     {% endif %}
+    {% if page.layout == "markdownPage" %}
+    <script src="/assets/js/markdown.js"></script>
+    {% endif %}
 </body>
 
 </html>
