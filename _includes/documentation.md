@@ -3,11 +3,11 @@
 
 ### What is TabFloater?
 
-TabFloater is a browser extension. It allows you to multitask by moving your chosen browser tab into a floating window. This is similar to the "Picture-in-Picture" functionality on TVs: the floating window is positioned as a small overlay window within your browser. You can keep browsing the web in both the floating and your main browser window.
+TabFloater is a browser extension. It allows you to multitask by moving a browser tab into a floating window. This is similar to the "Picture-in-Picture" functionality on TVs: the floating window is positioned as a small overlay window within your browser. You can keep browsing the web in both the floating and the main browser window.
 
 ### How does it work?
 
-When you float a tab, the following happens: TabFloater creates a new browser window (the same way as if you pressed `Ctrl+N`), positions it as a smaller window on top of your browser and moves your chosen tab into it. Then, TabFloater will "attach" the floating window to the main one: it will always be on top and it will minimize or drop to background with the main window.
+When you float a tab, TabFloater creates a new browser window (the same way as if you pressed `Ctrl+N`), positions it as a smaller window on top of your browser and moves your chosen tab into it. Then, TabFloater will "attach" the floating window to the main one: it will always be on top and it will minimize or drop to background with the main window.
 
 ### How do I use it?
 
@@ -28,11 +28,11 @@ The companion is a native application - you must download and set it up on your 
 
 ### Can I use TabFloater without installing the Companion?
 
-Yes you can, however your experience won't be great. The floating window is just like any other window on your system. Without the companion, if you click anywhere on your main browser, the floating window will simply drop to the background and it will disappear. You need the companion so that you can use both windows at the same time.
+Yes you can, however you will miss out on the main value of TabFloater. The floating window is just like any other window on your system. Without the companion, if you click anywhere on your main browser, the floating window will simply drop to the background and it will disappear. You need the companion so that you can use both windows at the same time.
 
 ### How do I set up the companion on Windows?
 
-Simply download and run the installer - no other steps are necessary. The extension will automatically find the companion on your computer.
+Simply download and run the installer. The extension will automatically find the companion on your computer.
 
 If you prefer not to install it, you can download the portable package as well. Unzip it and follow the instructions in `README.txt`.
 
@@ -47,11 +47,11 @@ $ wget -nv {{ site.data.downloads.download_url_prefix }}/{{ site.data.downloads.
 $ chmod +x {{ site.data.downloads.companion.linux.appimage }}
 ```
 
-Note: the AppImage format does not work with [browsers installed via Snap](#browsers-installed-via-snap).
+Then, [register](#register) the companion. Note that the AppImage format does not work with [browsers installed via Snap](#browsers-installed-via-snap).
 
 ##### **PPA**
 
-If you use Ubuntu 20.04 or above, you can also [add our PPA and install](download) the companion via `apt`. Note that starting version 19.10, Ubuntu ships Chromium exclusively via Snap - *if you'd like to use TabFloater with Chromium on Ubuntu 20.04+, you must install via PPA and also make sure to follow the instructions below*.
+If you use Ubuntu 20.04 or above, you can also [add our PPA and install](download) the companion via `apt`. Note that starting version 19.10, Ubuntu ships Chromium exclusively via Snap. *If you'd like to use TabFloater with Chromium on Ubuntu 20.04+, you must install via PPA and also make sure to follow the instructions below*.
 
 ##### **Browsers installed via Snap**
 
@@ -72,7 +72,7 @@ Then, follow the below instructions to register the companion, but use the `~/bi
 
 ##### **Register**
 
-After you install the application or download the AppImage, you need to register the companion for the browsers you want to use it for. Use the `register` subcommand with the desired browser name. For example, to register for all browsers, run:
+After you installed the application or downloaded the AppImage, you need to register the companion for the browsers you want to use it with. Use the `register` subcommand with the desired browser name. For example, to register for all browsers, run:
 
 ```
 $ ./{{ site.data.downloads.companion.linux.appimage }} register all
@@ -86,7 +86,9 @@ Check out the command line help for additional subcommands and options. If you i
 
 #### Can I trust this application?
 
-Yes. Both the browser extension and the companion are <a href="https://github.com/tabfloater/tabfloater" target="_blank">open source</a>, which means you are free to examine the source code to verify it doesn't do any funny business. In addition, the files you download from this website are built using automated tools, so you can be sure they originate from the same open source code.
+Both the browser extension and the companion are <a href="https://github.com/tabfloater/tabfloater" target="_blank">open source</a>, which means you are free to examine the source code to verify it doesn't do any funny business. The browser extensions are reviewed by the owners of the Chrome Web Store and Firefox. In addition, the files you download from this website are built using automated tools which you can also double check, so you can be sure they originate from the same open source code.
+
+The companion installation files will also contain a digital signature in the future.
 
 #### Do you collect any information about me?
 
