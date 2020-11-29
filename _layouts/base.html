@@ -49,12 +49,11 @@ limitations under the License.
                     <a href="privacy" class="uk-margin-right">Privacy policy</a>
                     <a href="https://github.com/tabfloater/tabfloater/issues/new" target="_blank">Contact</a>
                     <a href="https://github.com/tabfloater/tabfloater" target="_blank" class="uk-margin-left"
-                        uk-icon="icon: github; ratio: 1.2"></a>
+                        uk-icon="icon: github; ratio: 1.2" title="Visit on GitHub" data-uk-tooltip="delay: 500"></a>
                 </div>
             </div>
         </div>
     </footer>
-
 
     <script src="/assets/js/lib/fontawesome.all.min.js"></script>
     <script src="/assets/js/lib/uikit.min.js"></script>
@@ -66,6 +65,9 @@ limitations under the License.
     {% endif %}
     {% if page.url == "/download" or page.url == "/documentation" %}
     <script src="/assets/js/codeblocks.js"></script>
+    {% endif %}
+    {% if page.layout == "markdownPage" %}
+    <script src="/assets/js/markdown.js"></script>
     {% endif %}
 </body>
 

@@ -21,8 +21,14 @@ function getOS() {
     if (osInfo.indexOf("win") != -1) {
         return "Windows";
     }
+    if (osInfo.indexOf("android") != -1) {
+        return "Android";
+    }
     if (osInfo.indexOf("linux") != -1 || osInfo.indexOf("x11") != -1) {
         return "Linux";
+    }
+    if (osInfo.indexOf("iphone") != -1) {
+        return "iOS";
     }
     if (osInfo.indexOf("mac") != -1) {
         return "macOS";

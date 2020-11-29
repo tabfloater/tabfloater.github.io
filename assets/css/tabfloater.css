@@ -20,6 +20,10 @@
     right: 0;
 }
 
+.nav-index-page {
+    position: absolute;
+}
+
 .uk-sticky-placeholder {
     height: 0 !important;
 }
@@ -53,14 +57,19 @@
     width: 150px;
 }
 
-.img-shadow {
-    -webkit-box-shadow: 9px 10px 12px -3px rgba(0,0,0,0.53);
-    -moz-box-shadow: 9px 10px 12px -3px rgba(0,0,0,0.53);
-    box-shadow: 9px 10px 12px -3px rgba(0,0,0,0.53);
-}
-
 .uk-card-small {
     padding: 7px;
+}
+
+.shadow {
+    -webkit-box-shadow: 9px 10px 12px -3px rgba(0,0,0,0.30);
+    -moz-box-shadow: 9px 10px 12px -3px rgba(0,0,0,0.30);
+    box-shadow: 9px 10px 12px -3px rgba(0,0,0,0.30);
+}
+
+.firefox-badge {
+    width: 200px;
+    margin-top: 15px;
 }
 
 /* Code blocks */
@@ -86,4 +95,11 @@ pre {
 
 #cBanner {
     z-index: 100;
+}
+
+/* Header offsets for documentation links */
+
+.header-offset {
+    padding-top: 80px;
+    margin-top: -80px;
 }
