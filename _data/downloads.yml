@@ -5,7 +5,7 @@ companion:
     tag: v0.8.9_companion
     appimage: tabfloater-companion-0.8.9-x86_64.AppImage
   windows:
-    version: 0.8.8
-    tag: v0.8.8_companion
-    installer: TabFloater.Companion-0.8.8-win64.msi
-    portable: TabFloater.Companion-0.8.8-win64-portable.zip
+    version: 0.8.9
+    tag: v0.8.9_companion
+    installer: TabFloater.Companion-0.8.9-win64.msi
+    portable: TabFloater.Companion-0.8.9-win64-portable.zip
