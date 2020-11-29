@@ -61,6 +61,10 @@
     padding: 7px;
 }
 
+.background-image {
+    min-height: 1400px;
+}
+
 .shadow {
     -webkit-box-shadow: 9px 10px 12px -3px rgba(0,0,0,0.30);
     -moz-box-shadow: 9px 10px 12px -3px rgba(0,0,0,0.30);
