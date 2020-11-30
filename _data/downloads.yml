@@ -1,11 +1,11 @@
 download_url_prefix: https://github.com/tabfloater/tabfloater/releases/download
 companion:
   linux:
-    version: v0.8.6
-    tag: v0.8.6_companion
-    appimage: tabfloater-companion-0.8.6-x86_64.AppImage
+    version: 0.8.9
+    tag: v0.8.9_companion
+    appimage: tabfloater-companion-0.8.9-x86_64.AppImage
   windows:
-    version: v0.8.6
-    tag: v0.8.6_companion
-    installer: TabFloater.Companion-0.8.6-win64.msi
-    portable: TabFloater.Companion-0.8.6-win64-portable.zip
+    version: 0.8.9
+    tag: v0.8.9_companion
+    installer: TabFloater.Companion-0.8.9-win64.msi
+    portable: TabFloater.Companion-0.8.9-win64-portable.zip

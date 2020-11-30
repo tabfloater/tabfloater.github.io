@@ -15,17 +15,24 @@
  */
 
 function getOS() {
-    const platformOrAppVersion = navigator.platform || navigator.appVersion;
-    const osInfo = platformOrAppVersion.toString().toLowerCase();
+    const appVersion = navigator.appVersion || "";
+    const platform = navigator.platform || "";
+    const osInfo = `${appVersion}${platform}`.toLowerCase();
 
     if (osInfo.indexOf("win") != -1) {
         return "Windows";
     }
-    if (osInfo.indexOf("linux") != -1 || osInfo.indexOf("x11") != -1) {
-        return "Linux";
+    if (osInfo.indexOf("android") != -1) {
+        return "Android";
+    }
+    if (osInfo.indexOf("iphone") != -1) {
+        return "iOS";
     }
     if (osInfo.indexOf("mac") != -1) {
         return "macOS";
+    }
+    if (osInfo.indexOf("linux") != -1 || osInfo.indexOf("x11") != -1) {
+        return "Linux";
     }
 }
 
