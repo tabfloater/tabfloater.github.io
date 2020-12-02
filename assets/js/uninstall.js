@@ -1,5 +1,5 @@
 ---
-    ---
+---
 /*
  * Copyright 2020 Balazs Gyurak
  *
@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-import * as Analytics from "/assets/js/analytics.js"
+import * as Analytics from "/assets/js/analytics.js";
 
 const Environment = "{{ jekyll.environment }}";
 const MaxCommentLength = 500;
