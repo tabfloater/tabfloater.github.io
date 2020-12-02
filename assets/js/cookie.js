@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import configureAnalytics from "/assets/js/analytics.js"
-import Cookies from "/assets/js/lib/js.cookie.min.mjs"
+import configureAnalytics from "/assets/js/analytics.js";
+import Cookies from "/assets/js/lib/js.cookie.min.mjs";
 
 const CookieName = "CookiesAllowed";
 const TenYearsInDays = 3650;
