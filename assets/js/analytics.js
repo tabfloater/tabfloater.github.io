@@ -17,18 +17,60 @@
  */
 
 const Environment = "{{ jekyll.environment }}";
+const GoogleAnalyticsId = "{{ site.googleAnalyticsId }}";
 var initialized = false;
 
 export default function configureAnalytics() {
-    if (Environment.toLowerCase() == "production") {
+    if (Environment.toLowerCase() === "production") {
         if (!initialized) {
             window.dataLayer = window.dataLayer || [];
             function gtag() { dataLayer.push(arguments); }
             gtag("js", new Date());
-            gtag("config", "UA-175107528-3", { "anonymize_ip": true });
+            gtag("config", GoogleAnalyticsId, { "anonymize_ip": true });
             initialized = true;
         }
     } else {
         console.log("Not running in production - skipping Google Analytics setup");
     }
+}
+
+export async function sendEventAsync(eventCategory, eventAction, eventLabel) {
+    const requestObject = {
+        v: "1",
+        aip: 1,  // anonymize IP - see https://support.google.com/analytics/answer/2763052?hl=en
+        t: "event",
+        ds: "add-on",
+        tid: GoogleAnalyticsId,
+        cid: null,
+        ec: eventCategory,
+        ea: eventAction,
+        el: eventLabel
+    };
+
+    await sendRequestAsync("https://www.google-analytics.com/collect", requestObject);
+}
+
+function sendRequestAsync(url, requestObject) {
+    return new Promise(function (resolve, reject) {
+        const message = new URLSearchParams(requestObject).toString();
+        const request = new XMLHttpRequest();
+        request.open("POST", url, true);
+        request.onload = function () {
+            if (this.status >= 200 && this.status < 300) {
+                resolve(request.response);
+            } else {
+                reject({
+                    status: this.status,
+                    statusText: request.statusText
+                });
+            }
+        };
+        request.onerror = function () {
+            reject({
+                status: this.status,
+                statusText: request.statusText
+            });
+        };
+        request.send(message);
+    });
 }

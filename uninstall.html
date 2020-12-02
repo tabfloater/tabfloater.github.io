@@ -18,44 +18,102 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
-<div class="uk-container">
+<div id="uninstallForm" class="uk-container">
 
-    <h1>We are sorry to see you go!</h1>
-
+    <div>
+        <h1>TabFloater has been uninstalled</h1>
+    </div>
 
     <form class="uk-form-stacked">
         <fieldset class="uk-fieldset">
-
-            <!-- <legend class="uk-legend">Legend</legend> -->
-
-
-
             <div class="uk-margin">
                 <p>
-                    Why did you decide to uninstall TabFloater?
+                    We are sorry to see you go. Please take a moment to share your feedback - it will help us improve
+                    our application.
                 </p>
+                <h4>Why did you remove TabFloater?</h4>
                 <div class="uk-form-controls">
                     <ul class="uk-list">
-                        <li><label><input class="uk-radio" type="radio" name="radio2" checked> I don't use it</label></li>
-                        <li><label><input class="uk-radio" type="radio" name="radio2"> I don't want to install the companion</label></li>
-                        <li><label><input class="uk-radio" type="radio" name="radio2"> The companion is not available on my platform</label></li>
-                        <li><label><input class="uk-radio" type="radio" name="radio2"> I don't understand how it works / docs not clear enough</label></li>
-                        <li><label><input class="uk-radio" type="radio" name="radio2"> It's missing a feature I want / doesn't work as expected</label></li>
-                        <li><label><input class="uk-radio" type="radio" name="radio2"> No particular reason</label></li>
+                        <li><label><input id="reason_noUse" class="uk-radio uk-margin-small-right" type="radio"
+                                    name="reason">I don't use it</label></li>
+                        <li><label><input id="reason_error" class="uk-radio uk-margin-small-right" type="radio"
+                                    name="reason">It shows an error or doesn't work in some other way</label></li>
+                        <li><label><input id="reason_noClearDocs" class="uk-radio uk-margin-small-right" type="radio"
+                                    name="reason">I don't understand how it should work or why it's useful</label></li>
+                        <li><label><input id="reason_noCompanionInstall" class="uk-radio uk-margin-small-right"
+                                    type="radio" name="reason">I don't want to install the companion</label></li>
+                        <li><label><input id="reason_noCompanionPlatform" class="uk-radio uk-margin-small-right"
+                                    type="radio" name="reason">The companion is not available on my platform</label>
+                        </li>
+                        <li><label><input id="reason_otherExtension" class="uk-radio uk-margin-small-right" type="radio"
+                                    name="reason">I found a better extension that provides similar capabilities</label>
+                        </li>
+                        <li><label><input id="reason_other" class="uk-radio uk-margin-small-right" type="radio"
+                                    name="reason">Other...</label></li>
                     </ul>
                 </div>
             </div>
 
-            <div class="uk-margin">
-                <p>
-                    Any additional thoughts?
-                </p>
+            <div class="uk-margin uk-margin-remove-bottom">
                 <div class="uk-form-controls">
-                    <textarea class="uk-textarea" rows="4" placeholder="Share some feedback..."></textarea>
+                    <textarea id="commentsTextArea" class="uk-textarea" rows="4"
+                        placeholder="Any additional thoughts?"></textarea>
+                </div>
+                <div class="uk-text-right">
+                    <small id="charCount">0/500</small>
                 </div>
             </div>
 
-            <button class="uk-button uk-button-primary uk-border-pill uk-align-right">Submit</button>
+            <div class="uk-grid uk-flex-middle">
+                <div class="uk-width-auto">
+                    <button id="submitButton" class="uk-button uk-button-primary uk-border-pill" type="button"
+                        disabled>Submit</button>
+                </div>
+                <div class="uk-width-expand">
+                    <div id="docsLabel" hidden>
+                        Have a look at our <a href="documentation" target="_blank">documentation</a>, if you haven't
+                        already - it might answer your questions!
+                    </div>
+                    <div id="troubleShootingLabel" hidden>
+                        Please consider opening an <a href="https://github.com/tabfloater/tabfloater/issues/new"
+                            target="_blank">issue on GitHub</a>, so we can work with you to solve the problem.
+                    </div>
+                </div>
+            </div>
         </fieldset>
+        <p>
+            <small>By clicking Submit, your response will be sent to the developers of TabFloater. Learn more in our <a
+                    href="privacy" target="_blank">privacy policy</a>.</small>
+        </p>
     </form>
+</div>
+
+<div id="responseSuccess" class="uk-container uk-text-center uk-animation-fade" hidden>
+    <div class="uk-height-small"></div>
+    <h1>Thank you!</h1>
+    <p class="subtitle-text">
+        Your response has been submitted. <br />
+        You may close this window.
+    </p>
+    <div class="uk-padding">
+        <img src="/assets/images/undraw_Helpful_sign_re_8ms5.svg" width="350" alt="illustration" data-uk-img>
+    </div>
+</div>
+
+<div id="responseError" class="uk-container uk-text-center uk-animation-fade" hidden>
+    <div class="uk-height-small"></div>
+    <h1>Something went wrong :(</h1>
+    <p class="subtitle-text">
+        Don't worry, it's not your fault. <br />
+        If you're not in a hurry, please consider opening <br />
+        an <a href="https://github.com/tabfloater/tabfloater.github.io/issues/new" target="_blank">issue on GitHub</a>,
+        so we can fix this.
+    </p>
+    <div class="uk-width-xlarge uk-align-center uk-text-left">
+        <span class="subtitle-text">We'll need this:</span>
+        <pre><code id="responseErrorCodeArea"></code></pre>
+    </div>
+    <div class="uk-padding">
+        <img src="/assets/images/undraw_warning_cyit.svg" width="350" alt="illustration" data-uk-img>
+    </div>
 </div>

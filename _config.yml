@@ -1,4 +1,5 @@
 title: TabFloater
+googleAnalyticsId: UA-175107528-3
 exclude:
   - CNAME
   - Gemfile*
