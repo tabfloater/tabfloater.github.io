@@ -40,15 +40,15 @@ limitations under the License.
             <div class="uk-grid uk-child-width-1-2@s uk-flex-middle">
                 <div>
                     <a href="https://github.com/tabfloater/tabfloater/blob/master/LICENSE" target="_blank"
-                        class="uk-margin-right">© 2020 Balazs Gyurak</a>
+                        class="uk-margin-right">© 2020 TabFloater</a>
                 </div>
                 <div class="uk-text-right">
                     <button id="manageCookiePrefencesFooterButton"
                         class="uk-margin-right uk-button uk-button-link">C<span class="uk-text-lowercase">ookie
                             preferences</span></button>
                     <a href="privacy" class="uk-margin-right">Privacy policy</a>
-                    <a href="https://github.com/tabfloater/tabfloater/issues/new" target="_blank">Contact</a>
-                    <a href="https://github.com/tabfloater/tabfloater" target="_blank" class="uk-margin-left"
+                    <a href="about" class="uk-margin-right">About</a>
+                    <a href="https://github.com/tabfloater/tabfloater" target="_blank"
                         uk-icon="icon: github; ratio: 1.2" title="Visit on GitHub" data-uk-tooltip="delay: 500"></a>
                 </div>
             </div>
@@ -63,7 +63,7 @@ limitations under the License.
     {% if page.url == "/download" %}
     <script src="/assets/js/download.js"></script>
     {% endif %}
-    {% if page.url == "/download" or page.url == "/documentation" or page.url == "/uninstall" %}
+    {% if page.url == "/download" or page.layout == "markdownPage" %}
     <script src="/assets/js/codeblocks.js"></script>
     {% endif %}
     {% if page.layout == "markdownPage" %}

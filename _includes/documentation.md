@@ -109,6 +109,6 @@ If you are unable to resolve the problem or if the companion returns an error (a
 
 #### I have a problem / request / feedback
 
-We would love to hear from you. Please head over to GitHub and <a href="https://github.com/tabfloater/tabfloater/issues/new" target="_blank">open a new issue</a>.
+We would love to hear from you. Please head over to GitHub and <a href="https://github.com/tabfloater/tabfloater/issues/new/choose" target="_blank">open a new issue</a>.
 
 > <sup>(Note: you need a GitHub account to open an issue)</sup>
