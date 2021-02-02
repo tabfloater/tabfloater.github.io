@@ -3,7 +3,7 @@
 
 ### What is TabFloater?
 
-TabFloater is a browser extension. It allows you to multitask by moving a browser tab into a floating window. This is similar to the "Picture-in-Picture" functionality on TVs: the floating window is positioned as a small overlay window within your browser. You can keep browsing the web in both the floating and the main browser window.
+TabFloater is a browser extension. It allows you to multitask by moving a browser tab into a floating window. This is similar to the "Picture-in-Picture" functionality on TVs: the floating window is positioned as a small overlay window within your browser. You can keep browsing the web in all windows at the same time.
 
 ### How does it work?
 
