@@ -1,8 +1,8 @@
-## **Privacy policy**
+# **Privacy policy**
 
 This document describes how the TabFloater browser extension ("**TabFloater**"), the TabFloater Companion application ("**Companion**") and this website ("**Website**") collects and handles your data. Please read this policy carefully.
 
-### TabFloater
+## TabFloater
 ---
 
 TabFloater never collects, tracks or sends your personal information, browsing history or website interactions, neither to local storage nor to any remote computer.
@@ -11,11 +11,11 @@ The only exception to the above rule is some website titles you visit. When you 
 
 These window titles are **never** sent to any remote computer.
 
-##### **Logs**
+#### **Logs**
 
 If you enable it explicitly, TabFloater will log debug information to the browser's developer console. This log is not saved or sent anywhere, and is destroyed when you close your browser session. Most of the logged information is internal data, however when you float / unfloat a tab, the application does log the above described window titles.
 
-##### **Anonymous usage statistics**
+#### **Anonymous usage statistics**
 
 By default, TabFloater collects anonymous usage statistics and sends this data to Google Analytics. This information is only used to analyze how users interact with the application: for example, to see which features are used frequently. You can opt-out of this data collection on the Options page. The usage statistics are stored on Google Analytics servers, and are never shared with any third party by TabFloater developers.
 
@@ -33,7 +33,7 @@ No personal information is ever sent as part of the usage statistics data. TabFl
 
 The developers of TabFloater only see an aggregated view of the geographical distribution of users, but cannot tie this, or any other data to a specific user.
 
-##### **Extension permissions**
+#### **Extension permissions**
 
 TabFloater needs the following browser permissions to work:
  * `nativeMessaging`: necessary to communicate with the Companion application
@@ -41,18 +41,18 @@ TabFloater needs the following browser permissions to work:
  * `tabs`:  required for moving browser tabs between the floating window and the main browser window
  * `all_urls` (optional): this permission gives TabFloater access to the web pages you visit. This is only required by [Smart Positioning](documentation#how-do-i-use-it) and is used only to analyze the underlying structure of the web page to determine the optimal position for the floating window. The contents of the web page you visit is **never** extracted, analyzed or logged.
 
-##### **Update check**
+#### **Update check**
 
 Apart from the above described usage statistics collection, TabFloater will only ever make a connection to a remote computer to check for new Companion versions. This check happens when you start your browser.
 
-### Companion
+## Companion
 ---
 
 The only data the Companion has access to is what it receives from TabFloater: these are the window titles described in the above section. Apart from this, the Companion never collects, tracks or sends your personal information, neither to local storage nor to any remote computer.
 
 If you enable it explicitly, the Companion writes application logs to an external file. This log file stays on your computer and you have complete control over it. This log contain the window titles described above, and its location can be found on the TabFloater Options page.
 
-### Website
+## Website
 ---
 
 If you explicitly agree by clicking the `Accept` button on our Cookie notice, this website uses Google Analytics to track anonymous visitor statistics. We also instruct Google Analytics to anonymize your IP address, which hides your exact geographic location. <a href="https://support.google.com/analytics/answer/2763052?hl=en" target="_blank">Click here</a> to learn more about this. The developers of this website only see an aggregated view of the geographical distribution of visitors, but cannot tie this, or any other data to a specific visitor.
