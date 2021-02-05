@@ -33,7 +33,7 @@ Companion releases <a href="https://github.com/tabfloater/tabfloater/issues/198"
         <input type="hidden" name="hosted_button_id" value="8E2GR6WXHNY48" />
         <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" name="submit"
             title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-        <img alt="" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
+        <img alt="Paypal icon" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
     </form>
     <a href="https://www.buymeacoffee.com/ba32107" target="_blank"
         style="float: right; display: inline-block; margin-right: 25%;"><img

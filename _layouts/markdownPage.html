@@ -16,6 +16,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
+<h1 hidden>{{ page.title }}</h1>
+
 <div class="uk-container">
     {% capture markdown_content %}{% include {{ page.markdown_source }} %}{% endcapture %}
     {{ markdown_content | markdownify }}
