@@ -1,4 +1,4 @@
-# **About**
+## **About**
 
 TabFloater and this website are maintained by Balazs Gyurak.
 
