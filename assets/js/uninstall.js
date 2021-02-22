@@ -118,6 +118,5 @@ window.submitButton.onclick = async function () {
     } catch (error) {
         window.uninstallForm.hidden = true;
         window.responseError.hidden = false;
-        window.responseErrorCodeArea.textContent = `Reason: ${reason}\nComments: '${comments}'\nError: '${error.message}'\n${error.stack}`;
     }
 }
