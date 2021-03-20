@@ -30,6 +30,23 @@ limitations under the License.
     <link rel="icon" href="/assets/images/favicon.png">
     <link rel="stylesheet" type="text/css" href="/assets/css/uikit.min.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/tabfloater.css">
+    <script defer src="/assets/js/lib/uikit.min.js"></script>
+    <script defer src="/assets/js/lib/fontawesome.all.min.js"></script>
+    <script defer src="/assets/js/lib/uikit-icons.min.js"></script>
+    <script defer src="/assets/js/analytics.js" type="module"></script>
+    <script defer src="/assets/js/cookie.js" type="module"></script>
+    {% if page.url == "/download" %}
+    <script defer src="/assets/js/download.js"></script>
+    {% endif %}
+    {% if page.url == "/download" or page.layout == "markdownPage" %}
+    <script defer src="/assets/js/codeblocks.js"></script>
+    {% endif %}
+    {% if page.layout == "markdownPage" %}
+    <script defer src="/assets/js/markdown.js"></script>
+    {% endif %}
+    {% if page.url == "/uninstall" %}
+    <script defer src="/assets/js/uninstall.js" type="module"></script>
+    {% endif %}
 </head>
 
 <body>
@@ -42,37 +59,19 @@ limitations under the License.
             <div class="uk-grid uk-child-width-1-2@s uk-flex-middle">
                 <div>
                     <a href="https://github.com/tabfloater/tabfloater/blob/master/LICENSE" target="_blank"
-                        class="uk-margin-right">© 2021 TabFloater</a>
+                        rel="noopener" class="uk-margin-right">© 2021 TabFloater</a>
                 </div>
                 <div class="uk-text-right">
                     <button id="manageCookiePrefencesFooterButton"
                         class="uk-margin-right uk-button uk-button-link">C<span class="uk-text-lowercase">ookie
                             preferences</span></button>
                     <a href="privacy" class="uk-margin-right">Privacy policy</a>
-                    <a href="https://github.com/tabfloater/tabfloater" target="_blank"
+                    <a href="https://github.com/tabfloater/tabfloater" target="_blank" rel="noopener"
                         uk-icon="icon: github; ratio: 1.2" title="Visit on GitHub" data-uk-tooltip="delay: 500"></a>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script src="/assets/js/lib/fontawesome.all.min.js"></script>
-    <script src="/assets/js/lib/uikit.min.js"></script>
-    <script src="/assets/js/lib/uikit-icons.min.js"></script>
-    <script src="/assets/js/analytics.js" type="module"></script>
-    <script src="/assets/js/cookie.js" type="module"></script>
-    {% if page.url == "/download" %}
-    <script src="/assets/js/download.js"></script>
-    {% endif %}
-    {% if page.url == "/download" or page.layout == "markdownPage" %}
-    <script src="/assets/js/codeblocks.js"></script>
-    {% endif %}
-    {% if page.layout == "markdownPage" %}
-    <script src="/assets/js/markdown.js"></script>
-    {% endif %}
-    {% if page.url == "/uninstall" %}
-    <script src="/assets/js/uninstall.js" type="module"></script>
-    {% endif %}
 </body>
 
 </html>

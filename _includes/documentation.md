@@ -78,7 +78,7 @@ After you installed the application or downloaded the AppImage, you need to regi
 $ ./{{ site.data.downloads.companion.linux.appimage }} register all
 ```
 
-Check out the command line help for additional subcommands and options. If you installed the companion from the PPA, use the `tabfloater-companion` command instead of the AppImage name. You can also read the detailed documentation by running `man tabfloater-companion` (not available for AppImage) or by checking it out <a href="https://github.com/tabfloater/tabfloater/blob/master/companion/packaging/linux/ubuntu-ppa/debian/tabfloater-companion.1" target="_blank">directly on GitHub</a>.
+Check out the command line help for additional subcommands and options. If you installed the companion from the PPA, use the `tabfloater-companion` command instead of the AppImage name. You can also read the detailed documentation by running `man tabfloater-companion` (not available for AppImage) or by checking it out <a href="https://github.com/tabfloater/tabfloater/blob/master/companion/packaging/linux/ubuntu-ppa/debian/tabfloater-companion.1" target="_blank" rel="noopener">directly on GitHub</a>.
 
 
 ## **Other**
@@ -86,7 +86,7 @@ Check out the command line help for additional subcommands and options. If you i
 
 #### Can I trust this application?
 
-Both the browser extension and the companion are <a href="https://github.com/tabfloater/tabfloater" target="_blank">open source</a>, which means you are free to examine the source code to verify it doesn't do any funny business. The browser extensions are reviewed by the owners of the Chrome Web Store and Firefox. In addition, the files you download from this website are built using automated tools which you can also double check, so you can be sure they originate from the same open source code.
+Both the browser extension and the companion are <a href="https://github.com/tabfloater/tabfloater" target="_blank" rel="noopener">open source</a>, which means you are free to examine the source code to verify it doesn't do any funny business. The browser extensions are reviewed by the owners of the Chrome Web Store and Firefox. In addition, the files you download from this website are built using automated tools which you can also double check, so you can be sure they originate from the same open source code.
 
 The companion installation files will also contain a digital signature in the future.
 
@@ -109,6 +109,6 @@ If you are unable to resolve the problem or if the companion returns an error (a
 
 #### I have a problem / request / feedback
 
-We would love to hear from you. Please head over to GitHub and <a href="https://github.com/tabfloater/tabfloater/issues/new/choose" target="_blank">open a new issue</a>.
+We would love to hear from you. Please head over to GitHub and <a href="https://github.com/tabfloater/tabfloater/issues/new/choose" target="_blank" rel="noopener">open a new issue</a>.
 
 > <sup>(Note: you need a GitHub account to open an issue)</sup>
