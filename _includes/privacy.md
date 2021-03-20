@@ -29,7 +29,7 @@ The following is a list of actions that are reported to Google Analytics. For ea
 
 **Note:** The first event from the above list is sent before you have a chance to opt-out of usage data collection. By installing TabFloater, you agree to this.
 
-No personal information is ever sent as part of the usage statistics data. TabFloater also instructs Google Analytics to anonymize your IP address, which hides your exact geographic location. <a href="https://support.google.com/analytics/answer/2763052?hl=en" target="_blank">Click here</a> to learn more about this.
+No personal information is ever sent as part of the usage statistics data. TabFloater also instructs Google Analytics to anonymize your IP address, which hides your exact geographic location. <a href="https://support.google.com/analytics/answer/2763052?hl=en" target="_blank" rel="noopener">Click here</a> to learn more about this.
 
 The developers of TabFloater only see an aggregated view of the geographical distribution of users, but cannot tie this, or any other data to a specific user.
 
@@ -55,6 +55,6 @@ If you enable it explicitly, the Companion writes application logs to an externa
 ### Website
 ---
 
-If you explicitly agree by clicking the `Accept` button on our Cookie notice, this website uses Google Analytics to track anonymous visitor statistics. We also instruct Google Analytics to anonymize your IP address, which hides your exact geographic location. <a href="https://support.google.com/analytics/answer/2763052?hl=en" target="_blank">Click here</a> to learn more about this. The developers of this website only see an aggregated view of the geographical distribution of visitors, but cannot tie this, or any other data to a specific visitor.
+If you explicitly agree by clicking the `Accept` button on our Cookie notice, this website uses Google Analytics to track anonymous visitor statistics. We also instruct Google Analytics to anonymize your IP address, which hides your exact geographic location. <a href="https://support.google.com/analytics/answer/2763052?hl=en" target="_blank" rel="noopener">Click here</a> to learn more about this. The developers of this website only see an aggregated view of the geographical distribution of visitors, but cannot tie this, or any other data to a specific visitor.
 
-Cookies are only ever stored by the Google Analytics client library and are only used to anonymously distinguish between users. <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage" target="_blank">Click here</a> to learn more about the Google Analytics cookies.
+Cookies are only ever stored by the Google Analytics client library and are only used to anonymously distinguish between users. <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage" target="_blank" rel="noopener">Click here</a> to learn more about the Google Analytics cookies.
