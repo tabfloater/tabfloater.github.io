@@ -1,9 +1,9 @@
 download_url_prefix: https://github.com/tabfloater/tabfloater/releases/download
 companion:
   linux:
-    version: 1.1.0
-    tag: v1.1.0_companion
-    appimage: tabfloater-companion-1.1.0-x86_64.AppImage
+    version: 1.2.0
+    tag: v1.2.0_companion
+    appimage: tabfloater-companion-1.2.0-x86_64.AppImage
   windows:
     version: 1.1.0
     tag: v1.1.0_companion
