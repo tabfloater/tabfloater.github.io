@@ -5,7 +5,7 @@ companion:
     tag: v1.2.2_companion
     appimage: tabfloater-companion-1.2.2-x86_64.AppImage
   windows:
-    version: 1.2.1
-    tag: v1.2.1_companion
-    installer: TabFloater.Companion-1.2.1-win64.msi
-    portable: TabFloater.Companion-1.2.1-win64-portable.zip
+    version: 1.2.2
+    tag: v1.2.2_companion
+    installer: TabFloater.Companion-1.2.2-win64.msi
+    portable: TabFloater.Companion-1.2.2-win64-portable.zip
