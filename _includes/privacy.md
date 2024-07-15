@@ -5,9 +5,10 @@ This document describes how the TabFloater browser extension ("**TabFloater**"),
 ### TabFloater
 ---
 
-TabFloater never collects, tracks or sends your personal information, browsing history or website interactions, neither to local storage nor to any remote computer.
+TabFloater never collects, tracks or sends your personal information, browsing history or website interactions, neither to local storage nor to any remote computer, aside from the two exceptions as follows:
 
-The only exception to the above rule is some website titles you visit. When you perform a "Float tab" action, TabFloater captures the title of the currently active browser tab (the one that is moved to the floating window), as well as the title of the tab that becomes active in the main browser window after the float action happens. This information is necessary for the application to function correctly: it is passed on to the Companion (through native messaging), which uses it to identify the windows that need to be attached to each other. Learn more about how the Companion works [here](documentation#why-do-i-need-to-install-an-application-on-my-computer-to-use-tabfloater).
+ * Some website titles you visit. When you perform a "Float tab" action, TabFloater captures the title of the currently active browser tab (the one that is moved to the floating window), as well as the title of the tab that becomes active in the main browser window after the float action happens. This information is necessary for the application to function correctly: it is passed on to the Companion (through native messaging), which uses it to identify the windows that need to be attached to each other. Learn more about how the Companion works [here](documentation#why-do-i-need-to-install-an-application-on-my-computer-to-use-tabfloater).
+ * User email addresses are collected when creating an account to use the TabFloater application. These email addresses are stored and encrypted, for the sole purpose of authenticating our users' subscription status and periodically soliciting feedback so we may continue to improve TabFloater for their benefit. We do not sell, disclose, or use this information for other purposes.
 
 These window titles are **never** sent to any remote computer.
 
